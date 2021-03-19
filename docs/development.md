@@ -33,6 +33,12 @@ You may obtain a free Azure account with a hotmail.com email address (one will
 be assigned to you when you create the Azure account, which provisions an Azure
 AD directory), to avoid any confusion about the purpose of the account.
 
+If you would like to ingest Microsoft Intune data, you will also need to
+activate a free trial for Intune on your new Azure account which may be done at
+[this link][get-intune-trial]. Activating devices for management in Intune
+varies depending on the device [This documentation][device-enrollment] should
+guide you through it.
+
 In the Azure portal:
 
 1. Create an App Registration, multi-tenant, with the following API Permissions
@@ -159,3 +165,7 @@ How to add a client secret in the Azure console
   https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#protocol-diagram
 [admin-consent-j1dev]:
   https://login.microsoftonline.com/common/adminconsent?client_id=885121e7-c3c6-4378-8f6b-e315cc5994ce&state=12345&redirect_uri=https://localhost/microsoft-365/install
+[get-intune-trial]:
+  https://www.microsoft.com/en-us/microsoft-365/microsoft-endpoint-manager
+[device-enrollment]:
+  https://docs.microsoft.com/en-us/mem/intune/enrollment/device-enrollment
