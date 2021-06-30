@@ -68,6 +68,12 @@ export async function fetchDeviceConfigurationsAndFindings(
                 from: hostAgentEntity,
                 to: deviceConfigurationEntity,
                 properties: {
+                  _key:
+                    deviceStatus.id! +
+                    '|' +
+                    hostAgentEntity._key +
+                    '|' +
+                    deviceConfigurationEntity._key,
                   complianceStatus: deviceStatus.status,
                   compliant: [
                     ...UNRELATED_DEVICE_STATUSES,

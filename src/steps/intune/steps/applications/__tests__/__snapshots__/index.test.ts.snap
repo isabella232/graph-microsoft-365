@@ -13312,7 +13312,7 @@ Array [
   Object {
     "_class": "ASSIGNED",
     "_fromEntityKey": "683dbff1-c8ff-4996-91ae-85484de46cfc",
-    "_key": "683dbff1-c8ff-4996-91ae-85484de46cfc|assigned|IntuneManaged:google.com",
+    "_key": "50124056-8cca-4cf5-9f98-8e63bede0b6e683dbff1-c8ff-4996-91ae-85484de46cfc|683dbff1-c8ff-4996-91ae-85484de46cfc|IntuneManaged:google.com",
     "_toEntityKey": "IntuneManaged:google.com",
     "_type": "smartphone_assigned_intune_managed_application",
     "displayName": "ASSIGNED",
@@ -13324,7 +13324,7 @@ Array [
   Object {
     "_class": "ASSIGNED",
     "_fromEntityKey": "1f75329e-51fc-451c-bd40-c457337641a4",
-    "_key": "1f75329e-51fc-451c-bd40-c457337641a4|assigned|IntuneManaged:microsoft 365 apps for macos",
+    "_key": "55c4e44f-7e06-4586-8f4c-b1aebf301d321f75329e-51fc-451c-bd40-c457337641a4|1f75329e-51fc-451c-bd40-c457337641a4|IntuneManaged:microsoft 365 apps for macos",
     "_toEntityKey": "IntuneManaged:microsoft 365 apps for macos",
     "_type": "laptop_assigned_intune_managed_application",
     "displayName": "ASSIGNED",

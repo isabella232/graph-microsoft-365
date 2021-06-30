@@ -57,6 +57,12 @@ export async function fetchManagedApplications(
             from: deviceEntity,
             to: managedAppEntity,
             properties: {
+              _key:
+                deviceStatus.id! +
+                '|' +
+                deviceEntity._key +
+                '|' +
+                managedAppEntity._key,
               installState: deviceStatus.installState, // Possible values are: installed, failed, notInstalled, uninstallFailed, pendingInstall, & unknown
               installStateDetail: deviceStatus.installStateDetail, // extra details on the install state. Ex: iosAppStoreUpdateFailedToInstall
               errorCode: deviceStatus.errorCode,

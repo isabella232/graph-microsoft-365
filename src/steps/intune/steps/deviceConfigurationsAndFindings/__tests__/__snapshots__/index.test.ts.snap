@@ -70,7 +70,7 @@ Array [
   Object {
     "_class": "ASSIGNED",
     "_fromEntityKey": "intune-host-agent:683dbff1-c8ff-4996-91ae-85484de46cfc",
-    "_key": "intune-host-agent:683dbff1-c8ff-4996-91ae-85484de46cfc|assigned|6aa605f0-744e-4ae1-8031-c6564624c89b",
+    "_key": "7b521133-f056-40a9-b639-b76afd67e4bb_6aa605f0-744e-4ae1-8031-c6564624c89b_683dbff1-c8ff-4996-91ae-85484de46cfc|intune-host-agent:683dbff1-c8ff-4996-91ae-85484de46cfc|6aa605f0-744e-4ae1-8031-c6564624c89b",
     "_toEntityKey": "6aa605f0-744e-4ae1-8031-c6564624c89b",
     "_type": "intune_host_agent_assigned_device_configuration",
     "complianceStatus": "error",
