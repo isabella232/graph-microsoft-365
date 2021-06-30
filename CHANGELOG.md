@@ -8,6 +8,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Used unique `deviceStatus.id` for `_key` property of host agent ->
+  configuration relationships.
+
 ## 3.0.0 - 2020-03-18
 
 ### Updated
