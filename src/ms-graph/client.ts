@@ -22,6 +22,11 @@ import { ClientConfig } from './types';
 
 export type QueryParams = string | { [key: string]: string | number };
 
+interface GraphClientResponse<T> {
+  value: T[];
+  '@odata.nextLink'?: string;
+}
+
 /**
  * Pagination: https://docs.microsoft.com/en-us/graph/paging
  * Throttling with retry after: https://docs.microsoft.com/en-us/graph/throttling
@@ -151,12 +156,12 @@ export class GraphClient {
   }): Promise<void> {
     let nextLink: string | undefined = resourceUrl;
     let retries = 0;
+    let response: GraphClientResponse<T> | undefined;
     do {
       try {
-        nextLink = await this.callApi<T>({
+        response = await this.callApi<T>({
           link: nextLink,
           query,
-          callback,
         });
       } catch (err) {
         if (
@@ -173,18 +178,24 @@ export class GraphClient {
           this.handleApiError(err, resourceUrl);
         }
       }
+      if (response) {
+        for (const value of response.value) {
+          await callback(value);
+        }
+        nextLink = response['@odata.nextLink'];
+      } else {
+        nextLink = undefined;
+      }
     } while (nextLink);
   }
 
   protected async callApi<T>({
     link,
     query,
-    callback,
   }: {
     link: string;
     query?: QueryParams;
-    callback: (item: T) => void | Promise<void>;
-  }): Promise<string | undefined> {
+  }): Promise<GraphClientResponse<T> | undefined> {
     let api = this.client.api(link);
     if (query) {
       api = api.query(query);
@@ -192,10 +203,8 @@ export class GraphClient {
 
     const response = await api.get();
     if (response) {
-      for (const value of toArray(response.value ?? response)) {
-        await callback(value);
-      }
-      return response['@odata.nextLink'];
+      response.value = toArray(response.value ?? response);
+      return response;
     }
   }
 

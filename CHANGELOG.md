@@ -14,6 +14,9 @@ and this project adheres to
   configuration relationships.
 - Used unique `deviceStatus.id` for `_key` property of device -> managed
   application relationships.
+- Reconfigured where the callback function is called in the client such that
+  callback errors (such as `DUPLICATE_KEY_ERROR`) are not sent to the
+  `handleApiError` method.
 
 ## 3.0.0 - 2020-03-18
 
