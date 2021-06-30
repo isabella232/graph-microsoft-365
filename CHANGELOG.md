@@ -12,6 +12,8 @@ and this project adheres to
 
 - Used unique `deviceStatus.id` for `_key` property of host agent ->
   configuration relationships.
+- Used unique `deviceStatus.id` for `_key` property of device -> managed
+  application relationships.
 
 ## 3.0.0 - 2020-03-18
 
