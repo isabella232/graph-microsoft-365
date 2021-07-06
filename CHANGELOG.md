@@ -8,6 +8,13 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 3.0.3 - 2021-07-06
+
+### Changed
+
+- Remove promise.all in device step.
+- Explicitly look for duplicate keys in device finding step. Log on encounters.
+
 ## 3.0.2 - 2021-07-06
 
 ### Changed

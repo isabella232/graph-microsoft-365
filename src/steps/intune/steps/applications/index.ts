@@ -103,65 +103,57 @@ export async function fetchDetectedApplications(
     logger,
     instance.config,
   );
-  // Promise.all is likely ok in this case due to there only being a few device types
-  await Promise.all(
-    managedDeviceTypes.map(async (type) => {
-      return await jobState.iterateEntities(
-        { _type: type },
-        async (deviceEntity) => {
-          await intuneClient.iterateDetectedApps(
-            deviceEntity.id as string,
-            async ({ detectedApps }) => {
-              for (const detectedApp of detectedApps ?? []) {
-                // Ingest all assigned or line of business apps reguardless if a device has installed it or not yet
-                const detectedAppEntity = await findOrCreateDetectedApplicationEntity(
-                  detectedApp,
-                  jobState,
-                );
+  for (const type of managedDeviceTypes) {
+    await jobState.iterateEntities({ _type: type }, async (deviceEntity) => {
+      await intuneClient.iterateDetectedApps(
+        deviceEntity.id as string,
+        async ({ detectedApps }) => {
+          for (const detectedApp of detectedApps ?? []) {
+            // Ingest all assigned or line of business apps reguardless if a device has installed it or not yet
+            const detectedAppEntity = await findOrCreateDetectedApplicationEntity(
+              detectedApp,
+              jobState,
+            );
 
-                const version = detectedApp.version ?? UNVERSIONED;
-                const directRelationship = createDirectRelationship({
+            const version = detectedApp.version ?? UNVERSIONED;
+            const directRelationship = createDirectRelationship({
+              _class:
+                relationships.MULTI_DEVICE_INSTALLED_DETECTED_APPLICATION[0]
+                  ._class,
+              from: deviceEntity,
+              to: detectedAppEntity,
+              properties: {
+                version,
+                detectionId: detectedApp.id, // unique id for the specific detection
+              },
+            });
+            // Need to append the detectionId to the end of the key so there can be multiple relationships to the same Application entities
+            directRelationship._key += `|${detectedApp.id}`;
+            await jobState.addRelationship(directRelationship);
+
+            // If there is a managed application related to this, create a MANAGES relationship
+            let managedAppEntity;
+            if (detectedApp.displayName?.toLowerCase) {
+              managedAppEntity = await jobState.findEntity(
+                MANAGED_APP_KEY_PREFIX + detectedApp.displayName?.toLowerCase(),
+              );
+            }
+            if (managedAppEntity) {
+              await jobState.addRelationship(
+                createDirectRelationship({
                   _class:
-                    relationships.MULTI_DEVICE_INSTALLED_DETECTED_APPLICATION[0]
-                      ._class,
-                  from: deviceEntity,
+                    relationships
+                      .MANAGED_APPLICATION_MANAGES_DETECTED_APPLICATION._class,
+                  from: managedAppEntity,
                   to: detectedAppEntity,
-                  properties: {
-                    version,
-                    detectionId: detectedApp.id, // unique id for the specific detection
-                  },
-                });
-                // Need to append the detectionId to the end of the key so there can be multiple relationships to the same Application entities
-                directRelationship._key += `|${detectedApp.id}`;
-                await jobState.addRelationship(directRelationship);
-
-                // If there is a managed application related to this, create a MANAGES relationship
-                let managedAppEntity;
-                if (detectedApp.displayName?.toLowerCase) {
-                  managedAppEntity = await jobState.findEntity(
-                    MANAGED_APP_KEY_PREFIX +
-                      detectedApp.displayName?.toLowerCase(),
-                  );
-                }
-                if (managedAppEntity) {
-                  await jobState.addRelationship(
-                    createDirectRelationship({
-                      _class:
-                        relationships
-                          .MANAGED_APPLICATION_MANAGES_DETECTED_APPLICATION
-                          ._class,
-                      from: managedAppEntity,
-                      to: detectedAppEntity,
-                    }),
-                  );
-                }
-              }
-            },
-          );
+                }),
+              );
+            }
+          }
         },
       );
-    }),
-  );
+    });
+  }
 }
 
 async function findOrCreateDetectedApplicationEntity(
