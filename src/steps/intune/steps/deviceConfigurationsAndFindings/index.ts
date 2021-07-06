@@ -61,30 +61,42 @@ export async function fetchDeviceConfigurationsAndFindings(
               jobState,
             );
 
-            await jobState.addRelationship(
-              createDirectRelationship({
-                _class:
-                  relationships.HOST_AGENT_ASSIGNED_DEVICE_CONFIGURATION._class,
-                from: hostAgentEntity,
-                to: deviceConfigurationEntity,
-                properties: {
-                  _key:
-                    deviceStatus.id! +
-                    '|' +
-                    hostAgentEntity._key +
-                    '|' +
-                    deviceConfigurationEntity._key,
-                  complianceStatus: deviceStatus.status,
-                  compliant: [
-                    ...UNRELATED_DEVICE_STATUSES,
-                    'unknown',
-                    undefined,
-                  ].includes(deviceStatus.status)
-                    ? undefined
-                    : deviceStatus.status === 'compliant',
+            const hostAssignedDeviceKey =
+              deviceStatus.id! +
+              '|' +
+              hostAgentEntity._key +
+              '|' +
+              deviceConfigurationEntity._key;
+
+            if (await jobState.hasKey(hostAssignedDeviceKey)) {
+              logger.warn(
+                {
+                  deviceStatusId: deviceStatus.id,
                 },
-              }),
-            );
+                'Possible duplicate hostAssignedDeviceKey',
+              );
+            } else {
+              await jobState.addRelationship(
+                createDirectRelationship({
+                  _class:
+                    relationships.HOST_AGENT_ASSIGNED_DEVICE_CONFIGURATION
+                      ._class,
+                  from: hostAgentEntity,
+                  to: deviceConfigurationEntity,
+                  properties: {
+                    _key: hostAssignedDeviceKey,
+                    complianceStatus: deviceStatus.status,
+                    compliant: [
+                      ...UNRELATED_DEVICE_STATUSES,
+                      'unknown',
+                      undefined,
+                    ].includes(deviceStatus.status)
+                      ? undefined
+                      : deviceStatus.status === 'compliant',
+                  },
+                }),
+              );
+            }
 
             // Only create findings if they are open
             if (findingIsOpen(deviceStatus.status, logger) !== false) {
