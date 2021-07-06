@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 3.0.2 - 2021-07-06
+
 ### Changed
 
 - Explicitly look for duplicate keys in managed application step. Log on
