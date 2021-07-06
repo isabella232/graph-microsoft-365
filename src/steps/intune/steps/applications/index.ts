@@ -50,27 +50,40 @@ export async function fetchManagedApplications(
           return;
         }
 
-        await jobState.addRelationship(
-          createDirectRelationship({
-            _class:
-              relationships.MULTI_DEVICE_ASSIGNED_MANAGED_APPLICATION[0]._class,
-            from: deviceEntity,
-            to: managedAppEntity,
-            properties: {
-              _key:
-                deviceStatus.id! +
-                '|' +
-                deviceEntity._key +
-                '|' +
-                managedAppEntity._key,
-              installState: deviceStatus.installState, // Possible values are: installed, failed, notInstalled, uninstallFailed, pendingInstall, & unknown
-              installStateDetail: deviceStatus.installStateDetail, // extra details on the install state. Ex: iosAppStoreUpdateFailedToInstall
-              errorCode: deviceStatus.errorCode,
-              installedVersion:
-                managedApp.version ?? findNewestVersion(managedApp),
+        const deviceAssignedAppKey =
+          deviceStatus.id! +
+          '|' +
+          deviceEntity._key +
+          '|' +
+          managedAppEntity._key;
+        if (await jobState.hasKey(deviceAssignedAppKey)) {
+          logger.warn(
+            {
+              deviceStatusId: deviceStatus.id,
+              deviceId: deviceStatus.deviceId,
+              managedAppId: managedApp.id,
             },
-          }),
-        );
+            'Possible duplicate deviceAssignedAppKey',
+          );
+        } else {
+          await jobState.addRelationship(
+            createDirectRelationship({
+              _class:
+                relationships.MULTI_DEVICE_ASSIGNED_MANAGED_APPLICATION[0]
+                  ._class,
+              from: deviceEntity,
+              to: managedAppEntity,
+              properties: {
+                _key: deviceAssignedAppKey,
+                installState: deviceStatus.installState, // Possible values are: installed, failed, notInstalled, uninstallFailed, pendingInstall, & unknown
+                installStateDetail: deviceStatus.installStateDetail, // extra details on the install state. Ex: iosAppStoreUpdateFailedToInstall
+                errorCode: deviceStatus.errorCode,
+                installedVersion:
+                  managedApp.version ?? findNewestVersion(managedApp),
+              },
+            }),
+          );
+        }
       },
     );
   });

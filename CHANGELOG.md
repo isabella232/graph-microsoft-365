@@ -8,6 +8,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Explicitly look for duplicate keys in managed application step. Log on
+  encounters.
+
 ## 3.0.1 - 2021-06-30
 
 ### Fixed
