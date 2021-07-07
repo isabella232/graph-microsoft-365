@@ -30,6 +30,7 @@ export function createManagedDeviceEntity(
       assign: {
         _class,
         _type: selectDeviceType(managedDevice.deviceType, isPhysicalDevice),
+        _key: managedDevice.id,
         category: 'endpoint',
         id: managedDevice.id,
         name: managedDevice.deviceName,
