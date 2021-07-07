@@ -4,7 +4,7 @@ import {
 } from '@jupiterone/integration-sdk-testing';
 import { setupAzureRecording } from '../../../../../../test/recording';
 import { config } from '../../../../../../test/config';
-import { fetchDevices } from '../../devices';
+import { buildDeviceHostAgentRelationships, fetchDevices } from '../../devices';
 import { entities, relationships } from '../../../constants';
 import { Entity } from '@jupiterone/integration-sdk-core';
 import { isEqual } from 'lodash';
@@ -28,6 +28,7 @@ describe('fetchCompliancePolicyAndFindings', () => {
     const context = createMockStepExecutionContext({ instanceConfig: config });
 
     await fetchDevices(context);
+    await buildDeviceHostAgentRelationships(context);
     await fetchCompliancePolicyAndFindings(context);
 
     const compliancePolicyEntities = context.jobState.collectedEntities.filter(
