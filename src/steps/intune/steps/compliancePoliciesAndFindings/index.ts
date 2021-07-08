@@ -138,7 +138,10 @@ export const compliancePolicyAndFindingsSteps: Step<
       relationships.COMPLIANCE_POLICY_IDENTIFIED_NONCOMPLIANCE_FINDING,
       ...relationships.MULTI_DEVICE_HAS_NONCOMPLIANCE_FINDING,
     ],
-    dependsOn: [steps.FETCH_DEVICES],
+    dependsOn: [
+      steps.FETCH_DEVICES,
+      steps.BUILD_DEVICE_HOST_AGENT_RELATIONSHIPS,
+    ],
     executionHandler: fetchCompliancePolicyAndFindings,
   },
 ];

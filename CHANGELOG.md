@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 3.0.5 - 2021-07-08
+
+### Changed
+
+- Decouple `device` step and `host-agent` step.
+
 ## 3.0.4 - 2021-07-07
 
 ### Changed

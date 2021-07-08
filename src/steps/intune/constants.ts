@@ -5,8 +5,10 @@ import {
 } from '@jupiterone/integration-sdk-core';
 import { entities as activeDirectoryEntities } from '../active-directory';
 
-export const steps: { [k: string]: string } = {
+export const steps = {
   FETCH_DEVICES: 'managed-devices',
+  BUILD_DEVICE_HOST_AGENT_RELATIONSHIPS:
+    'build-device-host-agent-relationships',
   FETCH_COMPLIANCE_POLICIES_AND_FINDINGS: 'compliance-policies-and-findings',
   FETCH_DEVICE_CONFIGURATIONS_AND_FINDINGS:
     'device-configurations-and-findings',
