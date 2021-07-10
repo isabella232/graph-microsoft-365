@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 3.0.6 - 2021-07-10
+
 ### Changed
 
 - Removed raw data from `device` entities to fix lambda timeout.
