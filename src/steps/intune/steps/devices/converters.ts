@@ -26,7 +26,7 @@ export function createManagedDeviceEntity(
   }
   return createIntegrationEntity({
     entityData: {
-      source: managedDevice,
+      source: {},
       assign: {
         _class,
         _type: selectDeviceType(managedDevice.deviceType, isPhysicalDevice),
