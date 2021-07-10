@@ -4,7 +4,7 @@ import {
 } from '@jupiterone/integration-sdk-testing';
 import { setupAzureRecording } from '../../../../../../test/recording';
 import { config } from '../../../../../../test/config';
-import { buildDeviceHostAgentRelationships, fetchDevices } from '..';
+import { fetchDevices } from '..';
 import { entities, managedDeviceTypes } from '../../../constants';
 import { DATA_ACCOUNT_ENTITY, fetchUsers } from '../../../../active-directory';
 import { entities as activeDirectoryEntities } from '../../../../active-directory';
@@ -27,7 +27,6 @@ describe('fetchDevices', () => {
     const context = createMockStepExecutionContext({ instanceConfig: config });
 
     await fetchDevices(context);
-    await buildDeviceHostAgentRelationships(context);
 
     const managedDevices = context.jobState.collectedEntities.filter((e) =>
       e._class.includes('Host'),
@@ -95,7 +94,6 @@ describe('fetchDevices', () => {
     );
     await fetchUsers(context);
     await fetchDevices(context);
-    await buildDeviceHostAgentRelationships(context);
 
     const managedDevices = context.jobState.collectedEntities.filter((e) =>
       e._class.includes('Host'),
