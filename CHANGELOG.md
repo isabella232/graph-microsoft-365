@@ -11,6 +11,7 @@ and this project adheres to
 ### Changed
 
 - Removed raw data from `device` entities to fix lambda timeout.
+- Un-decoupled `device` step and `host-agent` step.
 
 ## 3.0.5 - 2021-07-08
 

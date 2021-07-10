@@ -5,7 +5,7 @@ import {
 import { setupAzureRecording } from '../../../../../../test/recording';
 import { config } from '../../../../../../test/config';
 import { fetchDeviceConfigurationsAndFindings } from '..';
-import { buildDeviceHostAgentRelationships, fetchDevices } from '../../devices';
+import { fetchDevices } from '../../devices';
 import { entities, relationships } from '../../../constants';
 import { Entity } from '@jupiterone/integration-sdk-core';
 import { isEqual } from 'lodash';
@@ -28,7 +28,6 @@ describe('fetchDeviceConfigurationsAndFindings', () => {
     const context = createMockStepExecutionContext({ instanceConfig: config });
 
     await fetchDevices(context);
-    await buildDeviceHostAgentRelationships(context);
     await fetchDeviceConfigurationsAndFindings(context);
 
     const deviceConfigEntities = context.jobState.collectedEntities.filter(

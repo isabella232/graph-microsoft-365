@@ -26,7 +26,7 @@ export function createManagedDeviceEntity(
   }
   return createIntegrationEntity({
     entityData: {
-      source: {},
+      source: {}, // removed due to size
       assign: {
         _class,
         _type: selectDeviceType(managedDevice.deviceType, isPhysicalDevice),
@@ -94,7 +94,7 @@ export function createIntuneHostAgentEntity(
 ): Entity {
   return createIntegrationEntity({
     entityData: {
-      source: managedDevice,
+      source: {}, // removed due to size
       assign: {
         _class: entities.HOST_AGENT._class,
         function: ['endpoint-compliance', 'endpoint-protection'], // https://github.com/JupiterOne/data-model/blob/master/src/schemas/HostAgent.json
