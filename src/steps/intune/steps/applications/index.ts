@@ -4,6 +4,8 @@ import {
   createDirectRelationship,
   JobState,
   Entity,
+  generateRelationshipKey,
+  RelationshipClass,
 } from '@jupiterone/integration-sdk-core';
 import { IntegrationConfig, IntegrationStepContext } from '../../../../types';
 import {
@@ -62,6 +64,7 @@ export async function fetchManagedApplications(
               deviceStatusId: deviceStatus.id,
               deviceId: deviceStatus.deviceId,
               managedAppId: managedApp.id,
+              deviceAssignedAppKey,
             },
             'Possible duplicate deviceAssignedAppKey',
           );
@@ -139,15 +142,26 @@ export async function fetchDetectedApplications(
               );
             }
             if (managedAppEntity) {
-              await jobState.addRelationship(
-                createDirectRelationship({
-                  _class:
-                    relationships
-                      .MANAGED_APPLICATION_MANAGES_DETECTED_APPLICATION._class,
-                  from: managedAppEntity,
-                  to: detectedAppEntity,
-                }),
+              const managedAppManagesDetectedAppKey = generateRelationshipKey(
+                RelationshipClass.MANAGES,
+                managedAppEntity,
+                detectedAppEntity,
               );
+              if (!(await jobState.hasKey(managedAppManagesDetectedAppKey))) {
+                await jobState.addRelationship(
+                  createDirectRelationship({
+                    _class:
+                      relationships
+                        .MANAGED_APPLICATION_MANAGES_DETECTED_APPLICATION
+                        ._class,
+                    from: managedAppEntity,
+                    to: detectedAppEntity,
+                    properties: {
+                      _key: managedAppManagesDetectedAppKey,
+                    },
+                  }),
+                );
+              }
             }
           }
         },
