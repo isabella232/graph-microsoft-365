@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 3.0.7 - 2021-07-12
+
 ### Fixed
 
 - Deduplicate `intune_managed_app_manages_intune_detected_app` relationships
