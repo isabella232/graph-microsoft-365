@@ -72,6 +72,7 @@ export async function fetchDeviceConfigurationsAndFindings(
               logger.warn(
                 {
                   deviceStatusId: deviceStatus.id,
+                  hostAssignedDeviceKey,
                 },
                 'Possible duplicate hostAssignedDeviceKey',
               );
