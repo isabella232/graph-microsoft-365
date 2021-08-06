@@ -70,7 +70,7 @@ The only requirement of an integration is to provide a `src/index.(ts|js)` which
 exports a `invocationConfig: IntegrationInvocationConfig` property.
 
 This project is an instance of the
-[integration template project](https://github.com/JupiterOne/sdk/tree/master/template),
+[integration template project](https://github.com/JupiterOne/sdk/tree/main/template),
 which provides a bit more structure.
 
 ## Documentation
@@ -78,7 +78,7 @@ which provides a bit more structure.
 ### Development
 
 Please reference the `@jupiterone/sdk`
-[development documentation](https://github.com/JupiterOne/sdk/blob/master/docs/development.md)
+[development documentation](https://github.com/JupiterOne/sdk/blob/main/docs/development.md)
 for more information on how to use the SDK.
 
 See [docs/development.md](docs/development.md) for details about how to get
