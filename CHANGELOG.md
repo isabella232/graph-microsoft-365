@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+- Removed raw data from `user` and `group` entities to fix lambda timeout.
+
 ## 3.0.7 - 2021-07-12
 
 ### Fixed

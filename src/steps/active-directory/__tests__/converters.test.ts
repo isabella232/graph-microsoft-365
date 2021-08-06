@@ -42,12 +42,7 @@ describe('createGroupEntity', () => {
       _class: ['UserGroup'],
       _key: '89fac263-2430-48fd-9278-dacfdfc89792',
       _type: 'azure_user_group',
-      _rawData: [
-        {
-          name: 'default',
-          rawData: exampleGroup,
-        },
-      ],
+      _rawData: [],
       classification: undefined,
       createdOn: 1556042765000,
       deletedOn: undefined,
@@ -83,12 +78,7 @@ describe('createUserEntity', () => {
       _class: ['User'],
       _key: 'abf00eda-02d6-4053-a077-eef036e1a4c8',
       _type: 'azure_user',
-      _rawData: [
-        {
-          name: 'default',
-          rawData,
-        },
-      ],
+      _rawData: [],
       name: 'Andrew Kulakov',
       displayName: 'Andrew Kulakov',
       givenName: 'Andrew',

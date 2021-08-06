@@ -1,8 +1,4 @@
-import {
-  RelationshipClass,
-  StepEntityMetadata,
-  StepRelationshipMetadata,
-} from '@jupiterone/integration-sdk-core';
+import { RelationshipClass } from '@jupiterone/integration-sdk-core';
 
 export const steps: Record<string, string> = {
   FETCH_ACCOUNT: 'account',
@@ -11,7 +7,7 @@ export const steps: Record<string, string> = {
   FETCH_USERS: 'users',
 };
 
-export const entities: Record<string, StepEntityMetadata> = {
+export const entities = {
   ACCOUNT: {
     resourceName: '[AD] Account',
     _type: 'microsoft_365_account',
@@ -43,7 +39,7 @@ export const entities: Record<string, StepEntityMetadata> = {
   },
 };
 
-export const relationships: Record<string, StepRelationshipMetadata> = {
+export const relationships = {
   ACCOUNT_HAS_USER: {
     _type: 'microsoft_365_account_has_azure_user',
     sourceType: entities.ACCOUNT._type,
