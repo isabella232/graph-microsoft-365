@@ -97,7 +97,7 @@ export function createIntuneHostAgentEntity(
       source: {}, // removed due to size
       assign: {
         _class: entities.HOST_AGENT._class,
-        function: ['endpoint-compliance', 'endpoint-protection'], // https://github.com/JupiterOne/data-model/blob/master/src/schemas/HostAgent.json
+        function: ['endpoint-compliance', 'endpoint-protection'], // https://github.com/JupiterOne/data-model/blob/main/src/schemas/HostAgent.json
         _type: entities.HOST_AGENT._type,
         _key: INTUNE_HOST_AGENT_KEY_PREFIX + managedDevice.id,
         name: 'intune-host-agent',

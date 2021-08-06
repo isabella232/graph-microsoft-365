@@ -1,6 +1,6 @@
 {
   "name": "@jupiterone/graph-microsoft-365",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "description": "A JupiterOne Integration for Microsoft 365",
   "license": "MPL-2.0",
   "main": "dist/index.js",
@@ -22,7 +22,7 @@
     "test:ci": "yarn lint && yarn type-check && yarn test",
     "prebuild": "yarn test:ci",
     "build": "tsc -p tsconfig.dist.json --declaration",
-    "prepush": "yarn lint && yarn type-check && jest --changedSince master",
+    "prepush": "yarn lint && yarn type-check && jest --changedSince main",
     "prepack": "yarn build"
   },
   "dependencies": {

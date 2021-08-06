@@ -74,10 +74,11 @@ export function createAccountEntityWithOrganization(
 export function createGroupEntity(data: Group): Entity {
   return createIntegrationEntity({
     entityData: {
-      source: data,
+      source: {}, // removed due to size
       assign: {
         _class: entities.GROUP._class,
         _type: entities.GROUP._type,
+        _key: data.id!,
         name: data.displayName,
         displayName: data.displayName as string | undefined,
         id: data.id,
@@ -103,7 +104,7 @@ export function generateUserKey(user: User): string {
 export function createUserEntity(data: User): Entity {
   return createIntegrationEntity({
     entityData: {
-      source: data,
+      source: {}, // removed due to size
       assign: {
         _key: generateUserKey(data),
         _class: entities.USER._class,
