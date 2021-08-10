@@ -16,6 +16,7 @@ and this project adheres to
 ### Fixed
 
 - Fixed duplicate key errors with `intune_managed_application` entities
+- Deduplicate `intune_host_agent_assigned_compliance_policy` relationships
 
 ## [3.0.8] - 2021-08-06
 
