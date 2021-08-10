@@ -202,7 +202,7 @@ export const applicationSteps: Step<
     entities: [entities.DETECTED_APPLICATION],
     relationships: [
       ...relationships.MULTI_DEVICE_INSTALLED_DETECTED_APPLICATION,
-      relationships.MANAGED_APPLICATION_MANAGES_DETECTED_APPLICATION,
+      // relationships.MANAGED_APPLICATION_MANAGES_DETECTED_APPLICATION,
     ],
     dependsOn: [steps.FETCH_DEVICES, steps.FETCH_MANAGED_APPLICATIONS],
     executionHandler: fetchDetectedApplications,

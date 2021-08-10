@@ -191,7 +191,6 @@ The following relationships are created/mapped:
 | `intune_host_agent`           | **MANAGES**           | `smartphone`                   |
 | `intune_host_agent`           | **MANAGES**           | `user_endpoint`                |
 | `intune_host_agent`           | **MANAGES**           | `workstation`                  |
-| `intune_managed_application`  | **MANAGES**           | `intune_detected_application`  |
 | `laptop`                      | **ASSIGNED**          | `intune_managed_application`   |
 | `laptop`                      | **HAS**               | `intune_noncompliance_finding` |
 | `laptop`                      | **INSTALLED**         | `intune_detected_application`  |
