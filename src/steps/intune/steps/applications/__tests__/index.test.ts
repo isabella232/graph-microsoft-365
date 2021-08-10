@@ -89,11 +89,6 @@ describe('fetchDetectedApplications', () => {
           (c) => c._type,
         ).includes(r._type),
     );
-    const managedAppDetectedAppRelationships = context.jobState.collectedRelationships.filter(
-      (r) =>
-        relationships.MANAGED_APPLICATION_MANAGES_DETECTED_APPLICATION._type ===
-        r._type,
-    );
 
     // Check that we have Detected Applications
     expect(detectedApplicationEntities.length).toBeGreaterThan(0);
@@ -104,14 +99,21 @@ describe('fetchDetectedApplications', () => {
       'detectedApplicationEntities',
     );
 
-    // Check that we have MANAGED_APPLICATION_MANAGES_DETECTED_APPLICATION relationships
-    expect(managedAppDetectedAppRelationships.length).toBeGreaterThan(0);
-    expect(managedAppDetectedAppRelationships).toMatchDirectRelationshipSchema(
-      {},
-    );
-    expect(managedAppDetectedAppRelationships).toMatchSnapshot(
-      'managedAppDetectedAppRelationships',
-    );
+    // TODO add managed application -> detected appliation relationship
+    // const managedAppDetectedAppRelationships = context.jobState.collectedRelationships.filter(
+    //   (r) =>
+    //     relationships.MANAGED_APPLICATION_MANAGES_DETECTED_APPLICATION._type ===
+    //     r._type,
+    // );
+    //
+    // // Check that we have MANAGED_APPLICATION_MANAGES_DETECTED_APPLICATION relationships
+    // expect(managedAppDetectedAppRelationships.length).toBeGreaterThan(0);
+    // expect(managedAppDetectedAppRelationships).toMatchDirectRelationshipSchema(
+    //   {},
+    // );
+    // expect(managedAppDetectedAppRelationships).toMatchSnapshot(
+    //   'managedAppDetectedAppRelationships',
+    // );
 
     // Check that we have DEVICE_ASSIGNED_DETECTED_APPLICATION relationships
     expect(deviceDetectedApplicationRelationships.length).toBeGreaterThan(0);

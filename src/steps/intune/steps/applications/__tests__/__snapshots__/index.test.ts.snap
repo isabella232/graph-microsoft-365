@@ -13294,26 +13294,13 @@ Array [
 ]
 `;
 
-exports[`fetchDetectedApplications should make entities and relationships correctly: managedAppDetectedAppRelationships 1`] = `
-Array [
-  Object {
-    "_class": "MANAGES",
-    "_fromEntityKey": "IntuneManaged:microsoft word",
-    "_key": "IntuneManaged:microsoft word|manages|IntuneDetected:microsoft word",
-    "_toEntityKey": "IntuneDetected:microsoft word",
-    "_type": "intune_managed_application_manages_detected_application",
-    "displayName": "MANAGES",
-  },
-]
-`;
-
 exports[`fetchManagedApplications should make entities and relationships correctly: deviceManagedApplicationRelationships 1`] = `
 Array [
   Object {
     "_class": "ASSIGNED",
     "_fromEntityKey": "683dbff1-c8ff-4996-91ae-85484de46cfc",
-    "_key": "50124056-8cca-4cf5-9f98-8e63bede0b6e683dbff1-c8ff-4996-91ae-85484de46cfc|683dbff1-c8ff-4996-91ae-85484de46cfc|IntuneManaged:google.com",
-    "_toEntityKey": "IntuneManaged:google.com",
+    "_key": "50124056-8cca-4cf5-9f98-8e63bede0b6e683dbff1-c8ff-4996-91ae-85484de46cfc|683dbff1-c8ff-4996-91ae-85484de46cfc|50124056-8cca-4cf5-9f98-8e63bede0b6e",
+    "_toEntityKey": "50124056-8cca-4cf5-9f98-8e63bede0b6e",
     "_type": "smartphone_assigned_intune_managed_application",
     "displayName": "ASSIGNED",
     "errorCode": 0,
@@ -13324,8 +13311,8 @@ Array [
   Object {
     "_class": "ASSIGNED",
     "_fromEntityKey": "1f75329e-51fc-451c-bd40-c457337641a4",
-    "_key": "55c4e44f-7e06-4586-8f4c-b1aebf301d321f75329e-51fc-451c-bd40-c457337641a4|1f75329e-51fc-451c-bd40-c457337641a4|IntuneManaged:microsoft 365 apps for macos",
-    "_toEntityKey": "IntuneManaged:microsoft 365 apps for macos",
+    "_key": "55c4e44f-7e06-4586-8f4c-b1aebf301d321f75329e-51fc-451c-bd40-c457337641a4|1f75329e-51fc-451c-bd40-c457337641a4|55c4e44f-7e06-4586-8f4c-b1aebf301d32",
+    "_toEntityKey": "55c4e44f-7e06-4586-8f4c-b1aebf301d32",
     "_type": "laptop_assigned_intune_managed_application",
     "displayName": "ASSIGNED",
     "errorCode": 0,
@@ -13343,7 +13330,7 @@ Array [
     "_class": Array [
       "Application",
     ],
-    "_key": "IntuneManaged:com.android.vending.apk",
+    "_key": "cfbeb753-49e3-4ed5-9743-f857eb74df2a",
     "_rawData": Array [
       Object {
         "name": "default",
@@ -13427,7 +13414,7 @@ Array [
     "_class": Array [
       "Application",
     ],
-    "_key": "IntuneManaged:google.com",
+    "_key": "50124056-8cca-4cf5-9f98-8e63bede0b6e",
     "_rawData": Array [
       Object {
         "name": "default",
@@ -13485,7 +13472,7 @@ Array [
     "_class": Array [
       "Application",
     ],
-    "_key": "IntuneManaged:intune company portal",
+    "_key": "813a7159-4c66-4286-82f3-51b39aaefcd9",
     "_rawData": Array [
       Object {
         "name": "default",
@@ -13550,7 +13537,7 @@ Array [
     "_class": Array [
       "Application",
     ],
-    "_key": "IntuneManaged:managed home screen",
+    "_key": "ccc52be9-a284-4f17-b669-f21a11bb4668",
     "_rawData": Array [
       Object {
         "name": "default",
@@ -13615,7 +13602,7 @@ Array [
     "_class": Array [
       "Application",
     ],
-    "_key": "IntuneManaged:microsoft 365 apps for macos",
+    "_key": "55c4e44f-7e06-4586-8f4c-b1aebf301d32",
     "_rawData": Array [
       Object {
         "name": "default",
@@ -13671,7 +13658,7 @@ Array [
     "_class": Array [
       "Application",
     ],
-    "_key": "IntuneManaged:microsoft 365 apps for windows 10",
+    "_key": "d88ed6fd-24da-406e-aba6-3e2c0c7a7e1d",
     "_rawData": Array [
       Object {
         "name": "default",
@@ -13757,7 +13744,7 @@ Array [
     "_class": Array [
       "Application",
     ],
-    "_key": "IntuneManaged:microsoft authenticator",
+    "_key": "f9872827-46cb-4d02-80d8-063fa5a9588b",
     "_rawData": Array [
       Object {
         "name": "default",
@@ -13822,7 +13809,7 @@ Array [
     "_class": Array [
       "Application",
     ],
-    "_key": "IntuneManaged:microsoft intune",
+    "_key": "d2c6709c-bec1-4e94-bcbc-0c7835ff19d9",
     "_rawData": Array [
       Object {
         "name": "default",
@@ -13887,7 +13874,7 @@ Array [
     "_class": Array [
       "Application",
     ],
-    "_key": "IntuneManaged:microsoft word",
+    "_key": "152c83ee-8d4d-4fd4-8cf3-62f7f6689ca0",
     "_rawData": Array [
       Object {
         "name": "default",
