@@ -4,8 +4,6 @@ import {
   createDirectRelationship,
   JobState,
   Entity,
-  generateRelationshipKey,
-  RelationshipClass,
 } from '@jupiterone/integration-sdk-core';
 import { IntegrationConfig, IntegrationStepContext } from '../../../../types';
 import {
@@ -19,7 +17,6 @@ import {
   createManagedApplicationEntity,
   DETECTED_APP_KEY_PREFIX,
   findNewestVersion,
-  MANAGED_APP_KEY_PREFIX,
   UNVERSIONED,
 } from './converters';
 import { DeviceManagementIntuneClient } from '../../clients/deviceManagementIntuneClient';
@@ -134,35 +131,36 @@ export async function fetchDetectedApplications(
             directRelationship._key += `|${detectedApp.id}`;
             await jobState.addRelationship(directRelationship);
 
-            // If there is a managed application related to this, create a MANAGES relationship
-            let managedAppEntity;
-            if (detectedApp.displayName?.toLowerCase) {
-              managedAppEntity = await jobState.findEntity(
-                MANAGED_APP_KEY_PREFIX + detectedApp.displayName?.toLowerCase(),
-              );
-            }
-            if (managedAppEntity) {
-              const managedAppManagesDetectedAppKey = generateRelationshipKey(
-                RelationshipClass.MANAGES,
-                managedAppEntity,
-                detectedAppEntity,
-              );
-              if (!(await jobState.hasKey(managedAppManagesDetectedAppKey))) {
-                await jobState.addRelationship(
-                  createDirectRelationship({
-                    _class:
-                      relationships
-                        .MANAGED_APPLICATION_MANAGES_DETECTED_APPLICATION
-                        ._class,
-                    from: managedAppEntity,
-                    to: detectedAppEntity,
-                    properties: {
-                      _key: managedAppManagesDetectedAppKey,
-                    },
-                  }),
-                );
-              }
-            }
+            // TODO create managed -> detected relationships
+            // // If there is a managed application related to this, create a MANAGES relationship
+            // let managedAppEntity;
+            // if (detectedApp.displayName?.toLowerCase) {
+            //   managedAppEntity = await jobState.findEntity(
+            //     MANAGED_APP_KEY_PREFIX + detectedApp.displayName?.toLowerCase(),
+            //   );
+            // }
+            // if (managedAppEntity) {
+            //   const managedAppManagesDetectedAppKey = generateRelationshipKey(
+            //     RelationshipClass.MANAGES,
+            //     managedAppEntity,
+            //     detectedAppEntity,
+            //   );
+            //   if (!(await jobState.hasKey(managedAppManagesDetectedAppKey))) {
+            //     await jobState.addRelationship(
+            //       createDirectRelationship({
+            //         _class:
+            //           relationships
+            //             .MANAGED_APPLICATION_MANAGES_DETECTED_APPLICATION
+            //             ._class,
+            //         from: managedAppEntity,
+            //         to: detectedAppEntity,
+            //         properties: {
+            //           _key: managedAppManagesDetectedAppKey,
+            //         },
+            //       }),
+            //     );
+            //   }
+            // }
           }
         },
       );

@@ -15,7 +15,6 @@ import {
 } from '@microsoft/microsoft-graph-types-beta';
 import { entities } from '../../constants';
 
-export const MANAGED_APP_KEY_PREFIX = 'IntuneManaged:';
 export const DETECTED_APP_KEY_PREFIX = 'IntuneDetected:';
 export const UNVERSIONED = 'unversioned';
 
@@ -34,12 +33,7 @@ export function createManagedApplicationEntity(
       assign: {
         _class: entities.MANAGED_APPLICATION._class,
         _type: entities.MANAGED_APPLICATION._type,
-        // The key needs to be the name of the application so it can be looked up when making managed -> detected app relationships.
-        // The managed app id is not available on the detected app so using it as the key here would make jobstate.findEntitiy not work.
-        // The prefix is necessary to ensure key is at least 10 characters
-        _key:
-          MANAGED_APP_KEY_PREFIX + managedApp.displayName?.toLowerCase() ??
-          managedApp.id, // Fallback to id if there is no name for the appds
+        _key: managedApp.id,
         id: managedApp.id,
         name: managedApp.displayName?.toLowerCase(),
         displayName: managedApp.displayName as string,

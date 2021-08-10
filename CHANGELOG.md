@@ -8,6 +8,15 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Removed relationships between `intune_managed_application` and
+  `intune_detected_application` entities.
+
+### Fixed
+
+- Fixed duplicate key errors with `intune_managed_application` entities
+
 ## [3.0.8] - 2021-08-06
 
 ### Changed
