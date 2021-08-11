@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Deduplicate `intune_noncompliance_finding` entities
+
 ## [3.0.9] - 2021-08-11
 
 ### Changed
