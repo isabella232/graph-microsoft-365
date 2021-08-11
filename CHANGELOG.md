@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [3.0.9] - 2021-08-11
+
 ### Changed
 
 - Removed relationships between `intune_managed_application` and
