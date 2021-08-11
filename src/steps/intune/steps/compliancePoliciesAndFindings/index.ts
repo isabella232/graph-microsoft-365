@@ -4,6 +4,7 @@ import {
   createDirectRelationship,
   Entity,
   JobState,
+  generateRelationshipKey,
 } from '@jupiterone/integration-sdk-core';
 import { IntegrationConfig, IntegrationStepContext } from '../../../../types';
 import { DeviceManagementIntuneClient } from '../../clients/deviceManagementIntuneClient';
@@ -60,24 +61,42 @@ export async function fetchCompliancePolicyAndFindings(
             jobState,
           );
 
-          await jobState.addRelationship(
-            createDirectRelationship({
-              _class:
-                relationships.HOST_AGENT_ASSIGNED_COMPLIANCE_POLICY._class,
-              from: hostAgentEntity,
-              to: compliancePolicyEntity,
-              properties: {
-                complianceStatus: deviceStatus.status, // Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict, notAssigned.
-                compliant: [
-                  ...UNRELATED_DEVICE_STATUSES,
-                  'unknown',
-                  undefined,
-                ].includes(deviceStatus.status)
-                  ? undefined
-                  : deviceStatus.status === 'compliant',
-              },
-            }),
+          const hostAgentAssignedCompliancePolicyKey = generateRelationshipKey(
+            relationships.HOST_AGENT_ASSIGNED_COMPLIANCE_POLICY._class,
+            hostAgentEntity,
+            compliancePolicyEntity,
           );
+
+          if (await jobState.hasKey(hostAgentAssignedCompliancePolicyKey)) {
+            logger.warn(
+              {
+                deviceStatusId: deviceStatus.id,
+                hostAgentKey: hostAgentEntity.id,
+                compliancePolicyKey: compliancePolicyEntity._key,
+                hostAgentAssignedCompliancePolicyKey,
+              },
+              'Possible duplicate hostAgentAssignedCompliancePolicyKey',
+            );
+          } else {
+            await jobState.addRelationship(
+              createDirectRelationship({
+                _class:
+                  relationships.HOST_AGENT_ASSIGNED_COMPLIANCE_POLICY._class,
+                from: hostAgentEntity,
+                to: compliancePolicyEntity,
+                properties: {
+                  complianceStatus: deviceStatus.status, // Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict, notAssigned.
+                  compliant: [
+                    ...UNRELATED_DEVICE_STATUSES,
+                    'unknown',
+                    undefined,
+                  ].includes(deviceStatus.status)
+                    ? undefined
+                    : deviceStatus.status === 'compliant',
+                },
+              }),
+            );
+          }
 
           // Only create findings if they are open
           if (findingIsOpen(deviceStatus.status, logger) !== false) {
