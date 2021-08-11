@@ -100,30 +100,41 @@ export async function fetchCompliancePolicyAndFindings(
 
           // Only create findings if they are open
           if (findingIsOpen(deviceStatus.status, logger) !== false) {
-            const noncomplianceFindingEntity = createNoncomplianceFindingEntity(
-              deviceStatus,
-              compliancePolicyEntity,
-              logger,
-            );
-            await jobState.addEntity(noncomplianceFindingEntity);
-            await jobState.addRelationship(
-              createDirectRelationship({
-                _class:
-                  relationships
-                    .COMPLIANCE_POLICY_IDENTIFIED_NONCOMPLIANCE_FINDING._class,
-                from: compliancePolicyEntity,
-                to: noncomplianceFindingEntity,
-              }),
-            );
-            await jobState.addRelationship(
-              createDirectRelationship({
-                _class:
-                  relationships.MULTI_DEVICE_HAS_NONCOMPLIANCE_FINDING[0]
-                    ._class,
-                from: deviceEntity,
-                to: noncomplianceFindingEntity,
-              }),
-            );
+            const noncomplianceFindingKey = deviceStatus.id;
+            if (await jobState.hasKey(noncomplianceFindingKey!)) {
+              logger.warn(
+                {
+                  deviceStatusId: deviceStatus.id,
+                },
+                'Possible duplicate compliancePolicyDeviceStatus',
+              );
+            } else {
+              const noncomplianceFindingEntity = createNoncomplianceFindingEntity(
+                deviceStatus,
+                compliancePolicyEntity,
+                logger,
+              );
+              await jobState.addEntity(noncomplianceFindingEntity);
+              await jobState.addRelationship(
+                createDirectRelationship({
+                  _class:
+                    relationships
+                      .COMPLIANCE_POLICY_IDENTIFIED_NONCOMPLIANCE_FINDING
+                      ._class,
+                  from: compliancePolicyEntity,
+                  to: noncomplianceFindingEntity,
+                }),
+              );
+              await jobState.addRelationship(
+                createDirectRelationship({
+                  _class:
+                    relationships.MULTI_DEVICE_HAS_NONCOMPLIANCE_FINDING[0]
+                      ._class,
+                  from: deviceEntity,
+                  to: noncomplianceFindingEntity,
+                }),
+              );
+            }
           }
         }
       },
