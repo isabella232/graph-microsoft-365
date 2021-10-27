@@ -87,7 +87,6 @@ function mutateRecordingEntry(entry: RecordingEntry): void {
       entry.response.content.text = JSON.stringify(
         {
           ...responseJson,
-          /* eslint-disable-next-line @typescript-eslint/camelcase */
           access_token: '[REDACTED]',
         },
         null,
