@@ -32,7 +32,7 @@ export const invocationConfig: IntegrationInvocationConfig = {
           sourceType: 'intune_account',
           _class: RelationshipClass.HAS,
           targetType: 'microsoft_tenant',
-          relationshipDirection: RelationshipDirection.REVERSE,
+          direction: RelationshipDirection.REVERSE,
         },
       ],
       dependsOn: [],
