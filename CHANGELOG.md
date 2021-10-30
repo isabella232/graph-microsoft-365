@@ -6,22 +6,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## Unreleased
 
-## [4.0.0] - 2021-10-27
+## 4.0.1 - 2021-10-30
+
+- Add a few development conveniences
+
+## 4.0.0 - 2021-10-27
 
 ### Changed
 
 - Upgrade `@jupiterone/integration-sdk-*` packages
 - Removed unused developer dependencies
 
-## [3.0.10] - 2021-08-11
+## 3.0.10 - 2021-08-11
 
 ### Fixed
 
 - Deduplicate `intune_noncompliance_finding` entities
 
-## [3.0.9] - 2021-08-11
+## 3.0.9 - 2021-08-11
 
 ### Changed
 
@@ -34,7 +38,7 @@ and this project adheres to
 - Deduplicate `intune_host_agent_assigned_compliance_policy` relationships
 - Deduplicate `intune_noncompliance_finding` entities
 
-## [3.0.8] - 2021-08-06
+## 3.0.8 - 2021-08-06
 
 ### Changed
 
