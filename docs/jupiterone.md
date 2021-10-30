@@ -12,17 +12,17 @@ organization and analyze resource relationships.
 
 ## How it Works
 
-- JupiterOne uses your configured credentials to periodically fetch acocunt
-  information, users, groups, and group members from Microsoft 365 to update the
-  graph.
+- JupiterOne periodically fetches account information, users, groups, and group
+  members from Microsoft 365 to update the graph.
 - You write JupiterOne queries to review and monitor updates to the graph.
 - You configure alerts to take action when JupiterOne graph changes.
 
 ## Requirements
 
-- An Azure account with a registered app that will provide credentials for the
-  program to connect to Microsoft Graph APIs.
-- A Microsoft 365 account to target for ingestion.
+- A Microsoft 365 business account to target for ingestion.
+- Administrative permission in the Microsoft 365 account to grant access to
+  JupiterOne.
+- You must have permission in JupiterOne to install new integrations.
 
 ## Support
 

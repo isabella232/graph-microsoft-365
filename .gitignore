@@ -1,6 +1,7 @@
 node_modules/
 dist/
 .j1-integration/
-.env
+.env*
+!.env.example
 .eslintcache
 tsconfig.tsbuildinfo
