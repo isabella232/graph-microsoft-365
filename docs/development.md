@@ -8,82 +8,84 @@ Graph Explorer][msgraph-explorer]
 
 ## Prerequisites
 
-- An Azure account with a registered app that will provide credentials for the
-  program to connect to Microsoft Graph APIs (steps to configure below).
-- A Microsoft 365 account to target for ingestion.
-
-## Azure provider account setup
-
-The Microsoft Graph API code is tested against three Active Directories:
-
-1. The multi-tenant app is installed, all permissions are granted
-1. The multi-tenant app is installed, most permissions are insufficient
-1. The multi-tenant app is not installed
-
-This allows for ensuring the API code handles some common target configuration
-scenarios.
+- An Azure account with an App Registration that will provide credentials for
+  the integration to authenticate with Microsoft Graph APIs. The App
+  Registration also defines the permissions the integration requires and which
+  the target tenant must authorize.
+- An Active Directory tenant to target for ingestion. It is possible to target
+  the Active Directory tenants defined in the Azure account holding the App
+  Registration. Multi-tenant App Registrations that have not undergone
+  [Publisher Verification][publisher-verification] cannot access other tenants.
 
 A JupiterOne staff developer can provide credentials for an existing development
-Azure account that tests are written against. This is the easiest way to begin
-making changes to the integration. Otherwise, you would need your own
-development Azure account, and the tests will likely need to be improved to
-avoid specific account information.
+Azure account with an App Registration and tenants that tests are written
+against. This is the easiest way to begin making changes to the integration.
 
-You may obtain a free Azure account with a hotmail.com email address (one will
-be assigned to you when you create the Azure account, which provisions an Azure
-AD directory), to avoid any confusion about the purpose of the account.
+Alternatively, you may establish a new Azure account, though tests will likely
+need to be improved to avoid specific account information.
 
-If you would like to ingest Microsoft Intune data, you will also need to
-activate a free trial for Intune on your new Azure account which may be done at
-[this link][get-intune-trial]. Activating devices for management in Intune
-varies depending on the device [This documentation][device-enrollment] should
-guide you through it.
+A [free trail of Intune][get-intune-trial] is required when working on that part
+of the integration. Learn more about [activating devices][device-enrollment].
+
+## App Registration
 
 In the Azure portal:
 
-1. Create an App Registration, multi-tenant, with the following API Permissions
-   configured:
-   1. `DeviceManagementApps.Read.All`
-      1. Read Microsoft Intune apps
-      1. Needed for creating `Application` entities
-   1. `DeviceManagementConfiguration.Read.All`
-      1. Read Microsoft Intune device configuration and policies
-      1. Needed for creating `Configuration` and `ControlPolicy` entities
-   1. `DeviceManagementManagedDevices.Read.All`
-      1. Read Microsoft Intune devices
-      1. Needed for creating `Device` and `HostAgent` entities
-   1. `Organization.Read.All`
-      1. Read organization information
-      1. Needed for creating the `Account` entity
-   1. `APIConnectors.Read.All`
-      1. Read API connectors for authentication flows
-      1. Needed for enriching the `Account` entity with Intune subscription
-         infomation
-   1. `DeviceManagementServiceConfig.Read.All`
-      1. Read Microsoft Intune configuration
-      1. Also needed for enriching the `Account` entity with Intune subscription
-         infomation
-   1. `Directory.Read.All`
-      1. Read directory data
-      1. Needed for creating `User`, `Group`, and `GroupUser` entities
-1. Add a 1-year secret (store securely in LastPass)
-1. Add a couple of optional Redirect URIs:
-   1. https://apps.dev.jupiterone.io/oauth-microsoft-365/v1/authorize
-   1. https://localhost/microsoft-365/oauth-microsoft-365/v1/authorize
+1. Create a mulit-tenant App Registration
+2. Configure the required [API permissions](#api-permissions)
+3. Add a 2-year secret
+4. Add a Redirect URIs for local development:
+   `https://localhost/microsoft-365/oauth-microsoft-365/v1/authorize`
 
-Then, create two additional Active Directory Tenants (you'll have a Default
-Directory already), a user account with Global Administrator Role assignment in
-each one for yourself, and then [grant Admin Consent](#authentication) to the
-multi-tenant Enterprise Application as follows:
+### API Permissions
 
-1. Default directory, grant permission now and always grant new permissions as
+1. `DeviceManagementApps.Read.All`
+   1. Read Microsoft Intune apps
+   1. Needed for creating `Application` entities
+2. `DeviceManagementConfiguration.Read.All`
+   1. Read Microsoft Intune device configuration and policies
+   2. Needed for creating `Configuration` and `ControlPolicy` entities
+3. `DeviceManagementManagedDevices.Read.All`
+   1. Read Microsoft Intune devices
+   2. Needed for creating `Device` and `HostAgent` entities
+4. `Organization.Read.All`
+   1. Read organization information
+   2. Needed for creating the `Account` entity
+5. `APIConnectors.Read.All`
+   1. Read API connectors for authentication flows
+   2. Needed for enriching the `Account` entity with Intune subscription
+      infomation
+6. `DeviceManagementServiceConfig.Read.All`
+   1. Read Microsoft Intune configuration
+   2. Also needed for enriching the `Account` entity with Intune subscription
+      infomation
+7. `Directory.Read.All`
+   1. Read directory data
+   2. Needed for creating `User`, `Group`, and `GroupUser` entities
+
+## Target Tenants
+
+The integration is tested against three Active Directory tenants:
+
+1. The app is installed, all permissions are granted
+1. The app is installed, most permissions are insufficient
+1. The app is not installed
+
+This allows for ensuring the Microsoft Graph API code handles some common target
+configuration scenarios.
+
+You'll need a user account with global administrator access in each tenant.
+[Grant admin consent](#authentication) to the multi-tenant application as
+follows:
+
+1. Default tenant: grant permission now and always grant new permissions as
    development of converters advances
-1. "J1 Insufficient Permissions" directory, grant permissions now
+2. "J1 Insufficient Permissions" tenant: grant permissions now
    (`Directory.Read.All` is all at this point in setup), but never grant any
    additional permisssions, to allow for testing cases where the app cannot
    fetch resources
-1. "J1 Inaccessible" directory, do not install the app at all here, to allow for
-   testing cases where we have not be installed in a valid directory
+3. "J1 Inaccessible" tenant: do not install the app at all here, to allow for
+   testing cases where we have not been installed in a valid directory
 
 Update `test/config.ts` with directory IDs as appropriate.
 
@@ -92,22 +94,22 @@ Update `test/config.ts` with directory IDs as appropriate.
 JupiterOne is configured in Azure App Registrations as a [multi-tenant
 daemon/server application][daemon-app]. The [OAuth 2 client credentials grant
 flow][oauth2-client-cred-flow] is executed to obtain consent from an
-organization administrator, producing a Service Principal in a tenant that
-grants consent to the app. The flow will provide the tenant ID where consent has
-been granted, which is stored for use in Microsoft Graph API calls.
+organizational tenant account having global administrator access. The flow will
+provide the tenant ID where consent has been granted, which is stored for use in
+Microsoft Graph API calls.
 
 Admin consent is granted to JupiterOne by:
 
 1. Log in to JupiterOne as a user with permission to set up an integration
-1. Add a Microsoft 365 integration instance
-1. You will be directed to Microsoft's identity platform, where you must login
-   in as a Global Administrator of the Active Directory Tenant you intend to
+2. Add a Microsoft 365 integration instance
+3. You will be directed to Microsoft's identity platform, where you must login
+   in as a global administrator of the Active Directory tenant you intend to
    target/ingest
-1. Review requested permissions and grant consent
+4. Review the requested permissions and grant consent
 
 To exercise the grant flow:
 
-1. Log in as a Global Administrator to the Active Directory Tenant you intend to
+1. Log in as a global administrator to the Active Directory Tenant you intend to
    target/ingest
 1. Follow the url returned from the J1
    `/integration-microsoft-365/v1/generate-auth-url` endpoint.
@@ -131,7 +133,7 @@ TENANT='<tenant / directory id>'
 ```
 
 This will be used to auto-populate the
-[authentication configuration](../src/instanceConfigFields.json).
+[integration instance configuration](../src/instanceConfigFields.json).
 
 ## References
 
@@ -169,3 +171,5 @@ How to add a client secret in the Azure console
   https://www.microsoft.com/en-us/microsoft-365/microsoft-endpoint-manager
 [device-enrollment]:
   https://docs.microsoft.com/en-us/mem/intune/enrollment/device-enrollment
+[publisher-verification]:
+  https://docs.microsoft.com/en-us/azure/active-directory/develop/publisher-verification-overview
