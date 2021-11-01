@@ -19,9 +19,12 @@ organization and analyze resource relationships.
 
 ## Requirements
 
-- A Microsoft 365 business account to target for ingestion.
-- Administrative permission in the Microsoft 365 account to grant access to
-  JupiterOne.
+- An organizational Active Directory tenant to target for ingestion. The
+  integration does not support the use of other tenant types.
+- An account in the tenant you want to target for ingestion that has global
+  administrator access. You will login with this account to grant the JupiterOne
+  application API permissions that can read data across all users (admin
+  consent).
 - You must have permission in JupiterOne to install new integrations.
 
 ## Support
@@ -61,14 +64,17 @@ If you need help with this integration, please contact
 
    <img src="./images/OffsiteDialog.png" alt="drawing" width="200"/>
 
-9. You will be directed to Microsoft's identity platform, where you must login
-   in as an administrator in the Microsoft organization you intend to integrate
-   with.
+9. You will be directed to Microsoft's identity platform where you must login in
+   as a global administrator of the organizational Active Directory tenant you
+   intend to integrate with.
 
       <img src="./images/PickAnAccount.png" alt="drawing" width="200"/>
 
-   NOTE: You must select a business account which are indicated by badge icons.
-   If you select a personal account, you will recieve the below error messaage.
+   NOTE: You must select an account belonging to an organizational tenant. When
+   you are already logged into an account, the badge icons indicate the nature
+   of the tenant the account belongs to.
+
+   Selecting a personal account produces the following error message.
 
       <img src="./images/PersonalAccountError.png" alt="drawing" width="200"/>
 
