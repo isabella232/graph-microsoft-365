@@ -38,15 +38,15 @@ If you need help with this integration, please contact
 
 1. From the configuration **Gear Icon**, select **Integrations**.
 
-   <img src="./images/LandingPage.png" alt="drawing" width="200"/>
+   ![Landing Page](images/LandingPage.png)
 
 2. Scroll to the **Microsoft-365** integration tile and click it.
 
-   <img src="./images/DefinitionsPage.png" alt="drawing" width="200"/>
+   ![Definitions Page](images/DefinitionsPage.png)
 
 3. Click the **Add Configuration** button.
 
-   <img src="./images/InstancesPage.png" alt="drawing" width="200"/>
+   ![Instances Page](images/InstancesPage.png)
 
 4. Enter the **Account Name** by which you'd like to identify this Microsoft 365
    account in JupiterOne. Ingested entities will have this value stored in
@@ -57,18 +57,18 @@ If you need help with this integration, please contact
    needs. You may leave this as `DISABLED` and manually execute the integration.
 7. Click **Create Configuration** once all values are provided.
 
-   <img src="./images/CompleteConfiguration.png" alt="drawing" width="200"/>
-   <img src="./images/IntegrationCreatedDialog.png" alt="drawing" width="200"/>
+   ![Complete Configuration](images/CompleteConfiguration.png)
+   ![Integration Created](images/IntegrationCreatedDialog.png)
 
 8. When prompted, click "Complete Offsite" in the dialog.
 
-   <img src="./images/OffsiteDialog.png" alt="drawing" width="200"/>
+   ![Offsite Dialog](images/OffsiteDialog.png)
 
 9. You will be directed to Microsoft's identity platform where you must login in
    as a global administrator of the organizational Active Directory tenant you
    intend to integrate with.
 
-      <img src="./images/PickAnAccount.png" alt="drawing" width="200"/>
+   ![Pick an account](images/PickAnAccount.png)
 
    NOTE: You must select an account belonging to an organizational tenant. When
    you are already logged into an account, the badge icons indicate the nature
@@ -76,35 +76,35 @@ If you need help with this integration, please contact
 
    Selecting a personal account produces the following error message.
 
-      <img src="./images/PersonalAccountError.png" alt="drawing" width="200"/>
+   ![Account Error](images/PersonalAccountError.png)
 
 10. Review requested permissions (which are described below) and grant consent.
 
-      <img src="./images/PickAnAccount.png" alt="drawing" width="200"/>
+    ![pick an account](images/PickAnAccount.png)
 
 ## Permissions
 
-1.  `DeviceManagementApps.Read.All`
+1. `DeviceManagementApps.Read.All`
     1. Read Microsoft Intune apps
     1. Needed for creating `Application` entities
-1.  `DeviceManagementConfiguration.Read.All`
+1. `DeviceManagementConfiguration.Read.All`
     1. Read Microsoft Intune device configuration and policies
     1. Needed for creating `Configuration` and `ControlPolicy` entities
-1.  `DeviceManagementManagedDevices.Read.All`
+1. `DeviceManagementManagedDevices.Read.All`
     1. Read Microsoft Intune devices
     1. Needed for creating `Device` and `HostAgent` entities
-1.  `Organization.Read.All`
+1. `Organization.Read.All`
     1. Read organization information
     1. Needed for creating the `Account` entity
-1.  `APIConnectors.Read.All`
+1. `APIConnectors.Read.All`
     1. Read API connectors for authentication flows
     1. Needed for enriching the `Account` entity with Intune subscription
        infomation
-1.  `DeviceManagementServiceConfig.Read.All`
+1. `DeviceManagementServiceConfig.Read.All`
     1. Read Microsoft Intune configuration
     1. Also needed for enriching the `Account` entity with Intune subscription
        infomation
-1.  `Directory.Read.All`
+1. `Directory.Read.All`
     1. Read directory data
     1. Needed for creating `User`, `Group`, and `GroupUser` entities
 
