@@ -8,6 +8,13 @@ and this project adheres to
 
 ## Unreleased
 
+## 4.0.2 - 2022-03-11
+
+## Fixed
+
+- Removed `raw_data` from Detected Application Entity
+- Added duplicate key check in `detected-applications` step
+
 ## 4.0.1 - 2021-10-30
 
 - Add a few development conveniences
