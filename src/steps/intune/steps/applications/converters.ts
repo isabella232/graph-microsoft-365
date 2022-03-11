@@ -75,7 +75,7 @@ export function createDetectedApplicationEntity(
 ): Entity {
   return createIntegrationEntity({
     entityData: {
-      source: detectedApp,
+      source: {},
       assign: {
         _class: entities.DETECTED_APPLICATION._class,
         _type: entities.DETECTED_APPLICATION._type,
