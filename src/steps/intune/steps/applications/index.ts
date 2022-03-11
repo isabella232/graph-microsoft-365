@@ -119,12 +119,13 @@ export async function fetchDetectedApplications(
 
             const version = detectedApp.version ?? UNVERSIONED;
 
-            const deviceInstalledDetectedAppKey = `${generateRelationshipKey(
-              relationships.MULTI_DEVICE_INSTALLED_DETECTED_APPLICATION[0]
-                ._class,
-              deviceEntity._key,
-              detectedAppEntity._key,
-            )}|${detectedApp.id}`;
+            const deviceInstalledDetectedAppKey =
+              generateRelationshipKey(
+                relationships.MULTI_DEVICE_INSTALLED_DETECTED_APPLICATION[0]
+                  ._class,
+                deviceEntity._key,
+                detectedAppEntity._key,
+              ) + `|${detectedApp.id}`;
 
             if (await jobState.hasKey(deviceInstalledDetectedAppKey)) {
               logger.warn(
