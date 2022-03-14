@@ -29,7 +29,7 @@ export function createCompliancePolicyEntity(
 ): Entity {
   return createIntegrationEntity({
     entityData: {
-      source: compliancePolicy,
+      source: {},
       assign: {
         _key: compliancePolicy.id,
         _class: entities.COMPLIANCE_POLICY._class,
