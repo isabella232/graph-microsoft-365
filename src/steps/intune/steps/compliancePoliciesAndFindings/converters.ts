@@ -29,8 +29,9 @@ export function createCompliancePolicyEntity(
 ): Entity {
   return createIntegrationEntity({
     entityData: {
-      source: compliancePolicy,
+      source: {},
       assign: {
+        _key: compliancePolicy.id,
         _class: entities.COMPLIANCE_POLICY._class,
         _type: entities.COMPLIANCE_POLICY._type,
         function: 'endpoint-compliance', // needed to match up with existing integrations data structures.
