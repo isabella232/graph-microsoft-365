@@ -8,6 +8,12 @@ and this project adheres to
 
 ## Unreleased
 
+## 4.0.3 - 2022-03-14
+
+## Fixed
+
+- Removed `raw_data` from Compliance Policy Entity
+
 ## 4.0.2 - 2022-03-11
 
 ## Fixed
