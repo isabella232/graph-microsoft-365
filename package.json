@@ -1,6 +1,6 @@
 {
   "name": "@jupiterone/graph-microsoft-365",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "A JupiterOne Integration for Microsoft 365",
   "license": "MPL-2.0",
   "main": "dist/index.js",
