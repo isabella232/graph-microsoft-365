@@ -4,7 +4,7 @@ import {
   createDirectRelationship,
   JobState,
   Entity,
-  generateRelationshipKey,
+  IntegrationLogger,
 } from '@jupiterone/integration-sdk-core';
 import { IntegrationConfig, IntegrationStepContext } from '../../../../types';
 import {
@@ -14,11 +14,11 @@ import {
   steps,
 } from '../../constants';
 import {
+  buildDetectedApplicationEntityKey,
   createDetectedApplicationEntity,
+  createDeviceInstalledApplicationRelationship,
   createManagedApplicationEntity,
-  DETECTED_APP_KEY_PREFIX,
   findNewestVersion,
-  UNVERSIONED,
 } from './converters';
 import { DeviceManagementIntuneClient } from '../../clients/deviceManagementIntuneClient';
 import { DetectedApp } from '@microsoft/microsoft-graph-types-beta';
@@ -90,6 +90,18 @@ export async function fetchManagedApplications(
   });
 }
 
+type DebugParams = {
+  logger: IntegrationLogger;
+  args: Record<string, any>;
+  msg: string;
+};
+
+function debug({ logger, args, msg }: DebugParams) {
+  if (process.env.DEBUG_APPLICATIONS) {
+    logger.info(args, msg);
+  }
+}
+
 /**
  * Creates a single `Application { _type: 'intune_detected_application' }` entity generated
  * for each `Application.displayName`. All `Device` entities which have an app installed with
@@ -104,10 +116,27 @@ export async function fetchDetectedApplications(
     logger,
     instance.config,
   );
+
+  const deviceEntityIdSet = new Set<string>();
+
   for (const type of managedDeviceTypes) {
     await jobState.iterateEntities({ _type: type }, async (deviceEntity) => {
+      const deviceEntityId = deviceEntity.id as string;
+
+      if (deviceEntityIdSet.has(deviceEntityId)) {
+        debug({
+          logger,
+          args: {
+            deviceEntityId,
+          },
+          msg: 'Found duplicate device entity ID',
+        });
+      } else {
+        deviceEntityIdSet.add(deviceEntityId);
+      }
+
       await intuneClient.iterateDetectedApps(
-        deviceEntity.id as string,
+        deviceEntityId,
         async ({ detectedApps }) => {
           for (const detectedApp of detectedApps ?? []) {
             // Ingest all assigned or line of business apps reguardless if a device has installed it or not yet
@@ -117,21 +146,20 @@ export async function fetchDetectedApplications(
                 jobState,
               );
 
-            const version = detectedApp.version ?? UNVERSIONED;
+            const deviceInstalledRelationship =
+              createDeviceInstalledApplicationRelationship({
+                deviceEntity,
+                detectedAppEntity,
+                detectedApp,
+              });
 
-            const deviceInstalledDetectedAppKey =
-              generateRelationshipKey(
-                relationships.MULTI_DEVICE_INSTALLED_DETECTED_APPLICATION[0]
-                  ._class,
-                deviceEntity._key,
-                detectedAppEntity._key,
-              ) + `|${detectedApp.id}`;
-
-            if (await jobState.hasKey(deviceInstalledDetectedAppKey)) {
+            if (await jobState.hasKey(deviceInstalledRelationship._key)) {
               logger.warn(
                 {
+                  relationshipKey: deviceInstalledRelationship._key,
                   deviceKey: deviceEntity._key,
                   detectedAppEntityKey: detectedAppEntity._key,
+                  detectedAppId: detectedApp.id,
                   relationshipClass:
                     relationships.MULTI_DEVICE_INSTALLED_DETECTED_APPLICATION[0]
                       ._class,
@@ -139,20 +167,7 @@ export async function fetchDetectedApplications(
                 'Possible duplicate deviceInstalledDetectedApp Key',
               );
             } else {
-              const directRelationship = createDirectRelationship({
-                _class:
-                  relationships.MULTI_DEVICE_INSTALLED_DETECTED_APPLICATION[0]
-                    ._class,
-                from: deviceEntity,
-                to: detectedAppEntity,
-                properties: {
-                  version,
-                  detectionId: detectedApp.id, // unique id for the specific detection
-                },
-              });
-              // Need to append the detectionId to the end of the key so there can be multiple relationships to the same Application entities
-              directRelationship._key += `|${detectedApp.id}`;
-              await jobState.addRelationship(directRelationship);
+              await jobState.addRelationship(deviceInstalledRelationship);
             }
             // TODO create managed -> detected relationships
             // // If there is a managed application related to this, create a MANAGES relationship
@@ -195,16 +210,16 @@ async function findOrCreateDetectedApplicationEntity(
   detectedApp: DetectedApp,
   jobState: JobState,
 ): Promise<Entity> {
-  let detectedAppEntity =
-    detectedApp.id &&
-    (await jobState.findEntity(
-      DETECTED_APP_KEY_PREFIX + detectedApp.displayName?.toLowerCase(),
-    ));
+  let detectedAppEntity = await jobState.findEntity(
+    buildDetectedApplicationEntityKey(detectedApp),
+  );
 
   if (!detectedAppEntity) {
-    detectedAppEntity = createDetectedApplicationEntity(detectedApp);
-    await jobState.addEntity(detectedAppEntity);
+    detectedAppEntity = await jobState.addEntity(
+      createDetectedApplicationEntity(detectedApp),
+    );
   }
+
   return detectedAppEntity;
 }
 

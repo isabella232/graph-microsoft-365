@@ -1,4 +1,5 @@
 import {
+  createDirectRelationship,
   createIntegrationEntity,
   Entity,
   parseTimePropertyValue,
@@ -13,7 +14,7 @@ import {
   MobileLobApp,
   DetectedApp,
 } from '@microsoft/microsoft-graph-types-beta';
-import { entities } from '../../constants';
+import { entities, relationships } from '../../constants';
 
 export const DETECTED_APP_KEY_PREFIX = 'IntuneDetected:';
 export const UNVERSIONED = 'unversioned';
@@ -64,6 +65,17 @@ export function createManagedApplicationEntity(
     },
   });
 }
+/**
+ * The key needs to be the name of the application so multiple relationships can be made to the same detected application entity.
+ * The id is unique per detection so using it as the key would make jobstate.findEntitiy not work.
+ * The prefix is necessary to ensure key is at least 10 characters
+ */
+export function buildDetectedApplicationEntityKey(detectedApp: DetectedApp) {
+  return (
+    DETECTED_APP_KEY_PREFIX + detectedApp.displayName?.toLowerCase() ??
+    detectedApp.id
+  ); // Fallback to id if there is no name for the app
+}
 
 /**
  * Creates an application entity that represents a global application.
@@ -79,17 +91,38 @@ export function createDetectedApplicationEntity(
       assign: {
         _class: entities.DETECTED_APPLICATION._class,
         _type: entities.DETECTED_APPLICATION._type,
-        // The key needs to be the name of the application so multiple relationships can be made to the same detected application entity.
-        // The id is unique per detection so using it as the key would make jobstate.findEntitiy not work.
-        // The prefix is necessary to ensure key is at least 10 characters
-        _key:
-          DETECTED_APP_KEY_PREFIX + detectedApp.displayName?.toLowerCase() ??
-          detectedApp.id, // Fallback to id if there is no name for the app
+        _key: buildDetectedApplicationEntityKey(detectedApp),
         name: detectedApp.displayName?.toLowerCase(),
         displayName: detectedApp.displayName as string,
       },
     },
   });
+}
+
+export function createDeviceInstalledApplicationRelationship({
+  deviceEntity,
+  detectedAppEntity,
+  detectedApp,
+}: {
+  deviceEntity: Entity;
+  detectedAppEntity: Entity;
+  detectedApp: DetectedApp;
+}) {
+  const version = detectedApp.version ?? UNVERSIONED;
+
+  const directRelationship = createDirectRelationship({
+    _class: relationships.MULTI_DEVICE_INSTALLED_DETECTED_APPLICATION[0]._class,
+    from: deviceEntity,
+    to: detectedAppEntity,
+    properties: {
+      version,
+      detectionId: detectedApp.id, // unique id for the specific detection
+    },
+  });
+
+  // Need to append the detectionId to the end of the key so there can be multiple relationships to the same Application entities
+  directRelationship._key += `|${detectedApp.id}`;
+  return directRelationship;
 }
 
 /**
