@@ -4,7 +4,6 @@ import {
   createDirectRelationship,
   JobState,
   Entity,
-  generateRelationshipKey,
   IntegrationLogger,
 } from '@jupiterone/integration-sdk-core';
 import { IntegrationConfig, IntegrationStepContext } from '../../../../types';
@@ -19,9 +18,7 @@ import {
   createDetectedApplicationEntity,
   createDeviceInstalledApplicationRelationship,
   createManagedApplicationEntity,
-  DETECTED_APP_KEY_PREFIX,
   findNewestVersion,
-  UNVERSIONED,
 } from './converters';
 import { DeviceManagementIntuneClient } from '../../clients/deviceManagementIntuneClient';
 import { DetectedApp } from '@microsoft/microsoft-graph-types-beta';
