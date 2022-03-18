@@ -56,10 +56,11 @@ export async function fetchDeviceConfigurationsAndFindings(
             );
           } else if (deviceIsRelatedToConfig(deviceStatus.status)) {
             // Only once we know the configuration is attached to a device do we add it to the jobstate
-            const deviceConfigurationEntity = await findOrCreateDeviceConfigurationEntity(
-              deviceConfiguration,
-              jobState,
-            );
+            const deviceConfigurationEntity =
+              await findOrCreateDeviceConfigurationEntity(
+                deviceConfiguration,
+                jobState,
+              );
 
             const hostAssignedDeviceKey =
               deviceStatus.id! +
@@ -110,11 +111,12 @@ export async function fetchDeviceConfigurationsAndFindings(
                   'Possible duplicate deviceConfigurationDeviceStatus',
                 );
               } else {
-                const noncomplianceFindingEntity = createNoncomplianceFindingEntity(
-                  deviceStatus,
-                  deviceConfigurationEntity,
-                  logger,
-                );
+                const noncomplianceFindingEntity =
+                  createNoncomplianceFindingEntity(
+                    deviceStatus,
+                    deviceConfigurationEntity,
+                    logger,
+                  );
                 await jobState.addEntity(noncomplianceFindingEntity);
                 await jobState.addRelationship(
                   createDirectRelationship({
@@ -153,9 +155,8 @@ async function findOrCreateDeviceConfigurationEntity(
     (await jobState.findEntity(deviceConfiguration.id));
 
   if (!deviceConfigurationEntity) {
-    deviceConfigurationEntity = createDeviceConfigurationEntity(
-      deviceConfiguration,
-    );
+    deviceConfigurationEntity =
+      createDeviceConfigurationEntity(deviceConfiguration);
     await jobState.addEntity(deviceConfigurationEntity);
   }
   return deviceConfigurationEntity;

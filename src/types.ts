@@ -31,4 +31,5 @@ export interface IntegrationConfig extends IntegrationInstanceConfig {
  * An `IntegrationStepExecutionContext` typed for this integration's
  * `IntegrationInstanceConfig`.
  */
-export type IntegrationStepContext = IntegrationStepExecutionContext<IntegrationConfig>;
+export type IntegrationStepContext =
+  IntegrationStepExecutionContext<IntegrationConfig>;

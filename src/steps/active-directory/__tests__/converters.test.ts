@@ -192,8 +192,7 @@ describe('createGroupMemberRelationship', () => {
       createGroupMemberRelationship(exampleGroupEntity, exampleGroupMemberUser),
     ).toEqual({
       _class: 'HAS',
-      _key:
-        '89fac263-2430-48fd-9278-dacfdfc89792|has|324e8daa-9c29-42a4-a74b-b9893e6d9750',
+      _key: '89fac263-2430-48fd-9278-dacfdfc89792|has|324e8daa-9c29-42a4-a74b-b9893e6d9750',
       _type: 'azure_group_has_member',
       _mapping: {
         relationshipDirection: RelationshipDirection.FORWARD,
@@ -223,8 +222,7 @@ describe('createGroupMemberRelationship', () => {
       ),
     ).toEqual({
       _class: 'HAS',
-      _key:
-        '89fac263-2430-48fd-9278-dacfdfc89792|has|324e8daa-9c29-42a4-a74b-b9893e6d9750',
+      _key: '89fac263-2430-48fd-9278-dacfdfc89792|has|324e8daa-9c29-42a4-a74b-b9893e6d9750',
       _type: 'azure_group_has_member',
       _mapping: {
         relationshipDirection: RelationshipDirection.FORWARD,
@@ -254,8 +252,7 @@ describe('createGroupMemberRelationship', () => {
       ),
     ).toEqual({
       _class: 'HAS',
-      _key:
-        '89fac263-2430-48fd-9278-dacfdfc89792|has|324e8daa-9c29-42a4-a74b-b9893e6d9750',
+      _key: '89fac263-2430-48fd-9278-dacfdfc89792|has|324e8daa-9c29-42a4-a74b-b9893e6d9750',
       _type: 'azure_group_has_member',
       _mapping: {
         relationshipDirection: RelationshipDirection.FORWARD,

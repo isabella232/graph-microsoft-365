@@ -30,15 +30,16 @@ describe('fetchManagedApplications', () => {
     await fetchDevices(context);
     await fetchManagedApplications(context);
 
-    const managedApplicationEntities = context.jobState.collectedEntities.filter(
-      (e) => isEqual(e._class, toArray(entities.MANAGED_APPLICATION._class)),
-    );
-    const deviceApplicationRelationships = context.jobState.collectedRelationships.filter(
-      (r) =>
+    const managedApplicationEntities =
+      context.jobState.collectedEntities.filter((e) =>
+        isEqual(e._class, toArray(entities.MANAGED_APPLICATION._class)),
+      );
+    const deviceApplicationRelationships =
+      context.jobState.collectedRelationships.filter((r) =>
         relationships.MULTI_DEVICE_ASSIGNED_MANAGED_APPLICATION.map(
           (c) => c._type,
         ).includes(r._type),
-    );
+      );
 
     // Check that we have Managed Applications
     expect(managedApplicationEntities.length).toBeGreaterThan(0);
@@ -80,15 +81,16 @@ describe('fetchDetectedApplications', () => {
     await fetchDevices(context);
     await fetchDetectedApplications(context);
 
-    const detectedApplicationEntities = context.jobState.collectedEntities.filter(
-      (e) => e._type === entities.DETECTED_APPLICATION._type,
-    );
-    const deviceDetectedApplicationRelationships = context.jobState.collectedRelationships.filter(
-      (r) =>
+    const detectedApplicationEntities =
+      context.jobState.collectedEntities.filter(
+        (e) => e._type === entities.DETECTED_APPLICATION._type,
+      );
+    const deviceDetectedApplicationRelationships =
+      context.jobState.collectedRelationships.filter((r) =>
         relationships.MULTI_DEVICE_INSTALLED_DETECTED_APPLICATION.map(
           (c) => c._type,
         ).includes(r._type),
-    );
+      );
 
     // Check that we have Detected Applications
     expect(detectedApplicationEntities.length).toBeGreaterThan(0);
