@@ -9,9 +9,10 @@ import { validateInvocation } from './validateInvocation';
 
 export const integrationSteps = [...activeDirectorySteps, ...intuneSteps];
 
-export const invocationConfig: IntegrationInvocationConfig<IntegrationConfig> = {
-  instanceConfigFields,
-  validateInvocation,
-  getStepStartStates,
-  integrationSteps,
-};
+export const invocationConfig: IntegrationInvocationConfig<IntegrationConfig> =
+  {
+    instanceConfigFields,
+    validateInvocation,
+    getStepStartStates,
+    integrationSteps,
+  };

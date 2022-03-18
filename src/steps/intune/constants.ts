@@ -136,18 +136,16 @@ export const relationships = {
     targetType: entities.NONCOMPLIANCE_FINDING._type,
     _class: RelationshipClass.HAS,
   }),
-  MULTI_DEVICE_ASSIGNED_MANAGED_APPLICATION: createRelationshipForAllDeviceTypes(
-    {
+  MULTI_DEVICE_ASSIGNED_MANAGED_APPLICATION:
+    createRelationshipForAllDeviceTypes({
       targetType: entities.MANAGED_APPLICATION._type,
       _class: RelationshipClass.ASSIGNED,
-    },
-  ),
-  MULTI_DEVICE_INSTALLED_DETECTED_APPLICATION: createRelationshipForAllDeviceTypes(
-    {
+    }),
+  MULTI_DEVICE_INSTALLED_DETECTED_APPLICATION:
+    createRelationshipForAllDeviceTypes({
       targetType: entities.DETECTED_APPLICATION._type,
       _class: RelationshipClass.INSTALLED,
-    },
-  ),
+    }),
   MANAGED_APPLICATION_MANAGES_DETECTED_APPLICATION: {
     _type: 'intune_managed_application_manages_detected_application',
     sourceType: entities.MANAGED_APPLICATION._type,

@@ -34,9 +34,10 @@ describe('fetchDevices', () => {
     const hostAgents = context.jobState.collectedEntities.filter((e) =>
       e._class.includes('HostAgent'),
     );
-    const managedDeviceRelationships = context.jobState.collectedRelationships.filter(
-      (r) => managedDeviceTypes.some((type) => r._type.includes(type)),
-    );
+    const managedDeviceRelationships =
+      context.jobState.collectedRelationships.filter((r) =>
+        managedDeviceTypes.some((type) => r._type.includes(type)),
+      );
     const userRelationships = managedDeviceRelationships.filter((r) =>
       r._type.includes(activeDirectoryEntities.USER._type),
     );
@@ -101,9 +102,10 @@ describe('fetchDevices', () => {
     const hostAgents = context.jobState.collectedEntities.filter((e) =>
       e._class.includes('HostAgent'),
     );
-    const managedDeviceRelationships = context.jobState.collectedRelationships.filter(
-      (r) => managedDeviceTypes.some((type) => r._type.includes(type)),
-    );
+    const managedDeviceRelationships =
+      context.jobState.collectedRelationships.filter((r) =>
+        managedDeviceTypes.some((type) => r._type.includes(type)),
+      );
     const userRelationships = managedDeviceRelationships.filter((r) =>
       r._type.includes(activeDirectoryEntities.USER._type),
     );
