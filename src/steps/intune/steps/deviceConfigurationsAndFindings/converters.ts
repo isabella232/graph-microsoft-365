@@ -31,6 +31,7 @@ export function createDeviceConfigurationEntity(
     entityData: {
       source: deviceConfiguration,
       assign: {
+        _key: deviceConfiguration.id!,
         _class: entities.DEVICE_CONFIGURATION._class,
         _type: entities.DEVICE_CONFIGURATION._type,
         function: 'endpoint-configuration', // needed to match up with existing integrations data structures.
@@ -62,6 +63,7 @@ export function createNoncomplianceFindingEntity(
     entityData: {
       source: deviceStatus,
       assign: {
+        _key: deviceStatus.id!,
         _class: entities.NONCOMPLIANCE_FINDING._class,
         _type: entities.NONCOMPLIANCE_FINDING._type,
         id: deviceStatus.id,

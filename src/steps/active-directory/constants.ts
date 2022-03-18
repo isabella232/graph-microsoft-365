@@ -11,22 +11,22 @@ export const entities = {
   ACCOUNT: {
     resourceName: '[AD] Account',
     _type: 'microsoft_365_account',
-    _class: 'Account',
+    _class: ['Account'],
   },
   GROUP: {
     resourceName: '[AD] Group',
     _type: 'azure_user_group',
-    _class: 'UserGroup',
+    _class: ['UserGroup'],
   },
   USER: {
     resourceName: '[AD] User',
     _type: 'azure_user',
-    _class: 'User',
+    _class: ['User'],
   },
   ORGANIZATION: {
     resourceName: '[AD] Organization',
     _type: 'azure_organization',
-    _class: 'Organization',
+    _class: ['Organization'],
   },
   /**
    * The entity used for members of groups which are not one of the ingested

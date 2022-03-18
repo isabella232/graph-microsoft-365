@@ -201,7 +201,7 @@ describe('createGroupMemberRelationship', () => {
         targetEntity: {
           _key: '324e8daa-9c29-42a4-a74b-b9893e6d9750',
           _type: 'azure_user',
-          _class: 'User',
+          _class: ['User'],
           displayName: 'User Name',
           jobTitle: 'Job Title',
           email: 'user@example.com',
@@ -231,7 +231,7 @@ describe('createGroupMemberRelationship', () => {
         targetEntity: {
           _key: '324e8daa-9c29-42a4-a74b-b9893e6d9750',
           _type: 'azure_user_group',
-          _class: 'UserGroup',
+          _class: ['UserGroup'],
           displayName: 'Managers',
           jobTitle: null,
           email: null,
