@@ -34,7 +34,7 @@ export function createManagedApplicationEntity(
       assign: {
         _class: entities.MANAGED_APPLICATION._class,
         _type: entities.MANAGED_APPLICATION._type,
-        _key: managedApp.id,
+        _key: managedApp.id!,
         id: managedApp.id,
         name: managedApp.displayName?.toLowerCase(),
         displayName: managedApp.displayName as string,

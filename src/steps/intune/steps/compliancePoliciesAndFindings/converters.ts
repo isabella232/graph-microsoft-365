@@ -31,7 +31,7 @@ export function createCompliancePolicyEntity(
     entityData: {
       source: {},
       assign: {
-        _key: compliancePolicy.id,
+        _key: compliancePolicy.id!,
         _class: entities.COMPLIANCE_POLICY._class,
         _type: entities.COMPLIANCE_POLICY._type,
         function: 'endpoint-compliance', // needed to match up with existing integrations data structures.
@@ -59,6 +59,7 @@ export function createNoncomplianceFindingEntity(
     entityData: {
       source: deviceStatus,
       assign: {
+        _key: deviceStatus.id!,
         _class: entities.NONCOMPLIANCE_FINDING._class,
         _type: entities.NONCOMPLIANCE_FINDING._type,
         id: deviceStatus.id,

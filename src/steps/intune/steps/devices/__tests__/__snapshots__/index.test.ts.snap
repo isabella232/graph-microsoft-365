@@ -231,7 +231,9 @@ Array [
       "relationshipDirection": "REVERSE",
       "sourceEntityKey": "683dbff1-c8ff-4996-91ae-85484de46cfc",
       "targetEntity": Object {
-        "_class": "User",
+        "_class": Array [
+          "User",
+        ],
         "_key": "001d35fc-dd2b-4d17-9ffc-3bafa265e7d9",
         "_type": "azure_user",
         "email": "redacted@email.com",
