@@ -8,6 +8,14 @@ and this project adheres to
 
 ## Unreleased
 
+### Changed
+
+- SDK version changed to `v8.6.3`
+- Changed all `_class`es to `[]string` from `string`
+- Converters now use explicit `_key`s instead of inheriting from `id`
+- A single test in `src/steps/active-directory/__tests__/index.test.ts` now uses
+  `matchRequestBy: { order: false }`
+
 ## 4.0.4 - 2022-03-15
 
 ### Changed
