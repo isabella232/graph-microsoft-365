@@ -8,6 +8,8 @@ and this project adheres to
 
 ## Unreleased
 
+## 5.0.0 - 2022-03-21
+
 ### Changed
 
 - SDK version changed to `v8.6.3`
