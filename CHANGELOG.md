@@ -8,6 +8,8 @@ and this project adheres to
 
 ## Unreleased
 
+## 6.0.0 - 2022-03-21
+
 ### Changed
 
 - **BREAKING** - Update `_type` of `smartphone` entity to `user_endpoint` when
