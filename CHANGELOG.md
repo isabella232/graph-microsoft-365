@@ -8,6 +8,15 @@ and this project adheres to
 
 ## Unreleased
 
+## 6.0.0 - 2022-03-21
+
+### Changed
+
+- **BREAKING** - Update `_type` of `smartphone` entity to `user_endpoint` when
+  the device has a `deviceType` with value `windowsRT`
+
+- Update integration SDK packages to v8.6.4
+
 ## 5.0.0 - 2022-03-21
 
 ### Changed
