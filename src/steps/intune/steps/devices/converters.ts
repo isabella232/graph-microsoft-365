@@ -149,7 +149,6 @@ export function selectDeviceType(
     case 'unix':
     case 'linux':
       return 'desktop';
-    case 'windowsRT': // retired mobile OS
     case 'winMO6': // retired mobile OS
     case 'nokia':
     case 'iPhone':
