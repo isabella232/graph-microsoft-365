@@ -8,6 +8,12 @@ and this project adheres to
 
 ## Unreleased
 
+## 6.0.1 - 2022-03-31
+
+### Changed
+
+- Added `sizeInByte` and `version` to the managed application entity.
+
 ## 6.0.0 - 2022-03-21
 
 ### Changed
