@@ -12,6 +12,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Microsoft Word",
     "name": "microsoft word",
+    "version": "16.46",
   },
   Object {
     "_class": Array [
@@ -23,6 +24,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Microsoft Outlook",
     "name": "microsoft outlook",
+    "version": "16.46",
   },
   Object {
     "_class": Array [
@@ -34,6 +36,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Microsoft OneNote",
     "name": "microsoft onenote",
+    "version": "16.46",
   },
   Object {
     "_class": Array [
@@ -45,6 +48,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Microsoft Excel",
     "name": "microsoft excel",
+    "version": "16.46",
   },
   Object {
     "_class": Array [
@@ -56,6 +60,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Microsoft PowerPoint",
     "name": "microsoft powerpoint",
+    "version": "16.46",
   },
   Object {
     "_class": Array [
@@ -67,6 +72,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Google Chrome",
     "name": "google chrome",
+    "version": "88.0.4324.182",
   },
   Object {
     "_class": Array [
@@ -78,6 +84,7 @@ Array [
     "createdOn": undefined,
     "displayName": "zoom.us",
     "name": "zoom.us",
+    "version": "5.4.9 (59931.0110)",
   },
   Object {
     "_class": Array [
@@ -89,6 +96,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Microsoft AutoUpdate",
     "name": "microsoft autoupdate",
+    "version": "4.31",
   },
   Object {
     "_class": Array [
@@ -100,6 +108,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Microsoft Edge",
     "name": "microsoft edge",
+    "version": "88.0.705.68",
   },
   Object {
     "_class": Array [
@@ -111,6 +120,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Sublime Text",
     "name": "sublime text",
+    "version": "Build 3211",
   },
   Object {
     "_class": Array [
@@ -122,6 +132,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Postman Agent",
     "name": "postman agent",
+    "version": "0.3.0",
   },
   Object {
     "_class": Array [
@@ -133,6 +144,7 @@ Array [
     "createdOn": undefined,
     "displayName": "VMware CBCloud",
     "name": "vmware cbcloud",
+    "version": "3.5.1fc19",
   },
   Object {
     "_class": Array [
@@ -144,6 +156,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AirScanLegacyDiscovery",
     "name": "airscanlegacydiscovery",
+    "version": "16",
   },
   Object {
     "_class": Array [
@@ -155,6 +168,7 @@ Array [
     "createdOn": undefined,
     "displayName": "MobileDeviceUpdater",
     "name": "mobiledeviceupdater",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -166,6 +180,7 @@ Array [
     "createdOn": undefined,
     "displayName": "OneDrive",
     "name": "onedrive",
+    "version": "21.002.0104",
   },
   Object {
     "_class": Array [
@@ -177,6 +192,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Xcode",
     "name": "xcode",
+    "version": "12.4",
   },
   Object {
     "_class": Array [
@@ -188,6 +204,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Docker",
     "name": "docker",
+    "version": "3.0.0",
   },
   Object {
     "_class": Array [
@@ -199,6 +216,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Spotify",
     "name": "spotify",
+    "version": "1.1.48.625.g1c87c7f7",
   },
   Object {
     "_class": Array [
@@ -210,6 +228,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Skype for Business",
     "name": "skype for business",
+    "version": "16.29.42",
   },
   Object {
     "_class": Array [
@@ -221,6 +240,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Keybase",
     "name": "keybase",
+    "version": "5.6.2-20210202191343+d72cc00cd3",
   },
   Object {
     "_class": Array [
@@ -232,6 +252,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Pritunl",
     "name": "pritunl",
+    "version": "1.2.2615.73",
   },
   Object {
     "_class": Array [
@@ -243,6 +264,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Insomnia",
     "name": "insomnia",
+    "version": "2020.5.2",
   },
   Object {
     "_class": Array [
@@ -254,6 +276,7 @@ Array [
     "createdOn": undefined,
     "displayName": "GitKraken",
     "name": "gitkraken",
+    "version": "7.4.1",
   },
   Object {
     "_class": Array [
@@ -265,6 +288,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Visual Studio Code",
     "name": "visual studio code",
+    "version": "1.53.1",
   },
   Object {
     "_class": Array [
@@ -276,6 +300,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Slack",
     "name": "slack",
+    "version": "4.12.2",
   },
   Object {
     "_class": Array [
@@ -287,6 +312,7 @@ Array [
     "createdOn": undefined,
     "displayName": "MRT",
     "name": "mrt",
+    "version": "1.73",
   },
   Object {
     "_class": Array [
@@ -298,6 +324,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Microsoft Remote Desktop",
     "name": "microsoft remote desktop",
+    "version": "10.5.1",
   },
   Object {
     "_class": Array [
@@ -309,6 +336,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Stethoscope",
     "name": "stethoscope",
+    "version": "4.0.0",
   },
   Object {
     "_class": Array [
@@ -320,6 +348,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Pages",
     "name": "pages",
+    "version": "10.0",
   },
   Object {
     "_class": Array [
@@ -331,6 +360,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Numbers",
     "name": "numbers",
+    "version": "10.0",
   },
   Object {
     "_class": Array [
@@ -342,6 +372,7 @@ Array [
     "createdOn": undefined,
     "displayName": "GarageBand",
     "name": "garageband",
+    "version": "10.3.4",
   },
   Object {
     "_class": Array [
@@ -353,6 +384,7 @@ Array [
     "createdOn": undefined,
     "displayName": "iMovie",
     "name": "imovie",
+    "version": "10.2.2",
   },
   Object {
     "_class": Array [
@@ -364,6 +396,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Keynote",
     "name": "keynote",
+    "version": "10.0",
   },
   Object {
     "_class": Array [
@@ -375,6 +408,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Safari",
     "name": "safari",
+    "version": "14.0.3",
   },
   Object {
     "_class": Array [
@@ -386,6 +420,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Reality Composer",
     "name": "reality composer",
+    "version": "1.5",
   },
   Object {
     "_class": Array [
@@ -397,6 +432,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Accessibility Inspector",
     "name": "accessibility inspector",
+    "version": "5.0",
   },
   Object {
     "_class": Array [
@@ -408,6 +444,7 @@ Array [
     "createdOn": undefined,
     "displayName": "FileMerge",
     "name": "filemerge",
+    "version": "2.11",
   },
   Object {
     "_class": Array [
@@ -419,6 +456,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Instruments",
     "name": "instruments",
+    "version": "12.4",
   },
   Object {
     "_class": Array [
@@ -430,6 +468,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Create ML",
     "name": "create ml",
+    "version": "2.0",
   },
   Object {
     "_class": Array [
@@ -441,6 +480,7 @@ Array [
     "createdOn": undefined,
     "displayName": "PowerShell",
     "name": "powershell",
+    "version": "7.1.1",
   },
   Object {
     "_class": Array [
@@ -452,6 +492,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Cocoa-AppleScript Applet",
     "name": "cocoa-applescript applet",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -463,6 +504,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Recursive Image File Processing Droplet",
     "name": "recursive image file processing droplet",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -474,6 +516,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Droplet with Settable Properties",
     "name": "droplet with settable properties",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -485,6 +528,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Recursive File Processing Droplet",
     "name": "recursive file processing droplet",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -496,6 +540,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AppleMobileSync",
     "name": "applemobilesync",
+    "version": "5.0",
   },
   Object {
     "_class": Array [
@@ -507,6 +552,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AppleMobileDeviceHelper",
     "name": "applemobiledevicehelper",
+    "version": "5.0",
   },
   Object {
     "_class": Array [
@@ -518,6 +564,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Fax Receive Monitor",
     "name": "fax receive monitor",
+    "version": "1.71",
   },
   Object {
     "_class": Array [
@@ -529,6 +576,7 @@ Array [
     "createdOn": undefined,
     "displayName": "FAX Utility",
     "name": "fax utility",
+    "version": "1.73",
   },
   Object {
     "_class": Array [
@@ -540,6 +588,7 @@ Array [
     "createdOn": undefined,
     "displayName": "EPFaxAutoSetupTool",
     "name": "epfaxautosetuptool",
+    "version": "1.71",
   },
   Object {
     "_class": Array [
@@ -551,6 +600,7 @@ Array [
     "createdOn": undefined,
     "displayName": "commandFilter",
     "name": "commandfilter",
+    "version": "1.71",
   },
   Object {
     "_class": Array [
@@ -562,6 +612,7 @@ Array [
     "createdOn": undefined,
     "displayName": "rastertoepfax",
     "name": "rastertoepfax",
+    "version": "1.71",
   },
   Object {
     "_class": Array [
@@ -573,6 +624,7 @@ Array [
     "createdOn": undefined,
     "displayName": "epsonfax",
     "name": "epsonfax",
+    "version": "1.71",
   },
   Object {
     "_class": Array [
@@ -584,6 +636,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Simulator",
     "name": "simulator",
+    "version": "12.4",
   },
   Object {
     "_class": Array [
@@ -595,6 +648,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Xcode Server Builder",
     "name": "xcode server builder",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -606,6 +660,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Python Launcher 3",
     "name": "python launcher 3",
+    "version": "3.9.1",
   },
   Object {
     "_class": Array [
@@ -617,6 +672,7 @@ Array [
     "createdOn": undefined,
     "displayName": "IDLE 3",
     "name": "idle 3",
+    "version": "3.9.1",
   },
   Object {
     "_class": Array [
@@ -628,6 +684,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Python",
     "name": "python",
+    "version": "3.9.1",
   },
   Object {
     "_class": Array [
@@ -639,6 +696,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Microsoft.NETCore.App.app",
     "name": "microsoft.netcore.app.app",
+    "version": null,
   },
   Object {
     "_class": Array [
@@ -650,6 +708,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Install Spotify",
     "name": "install spotify",
+    "version": "1.1.48.625.g1c87c7f7",
   },
   Object {
     "_class": Array [
@@ -661,6 +720,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Spectacle",
     "name": "spectacle",
+    "version": "1.2",
   },
   Object {
     "_class": Array [
@@ -672,6 +732,7 @@ Array [
     "createdOn": undefined,
     "displayName": "EPSON Scanner",
     "name": "epson scanner",
+    "version": "5.7.24",
   },
   Object {
     "_class": Array [
@@ -683,6 +744,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Canon IJScanner2",
     "name": "canon ijscanner2",
+    "version": "4.0.0",
   },
   Object {
     "_class": Array [
@@ -694,6 +756,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Canon IJScanner6",
     "name": "canon ijscanner6",
+    "version": "4.0.0",
   },
   Object {
     "_class": Array [
@@ -705,6 +768,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Canon IJScanner4",
     "name": "canon ijscanner4",
+    "version": "4.0.0",
   },
   Object {
     "_class": Array [
@@ -716,6 +780,7 @@ Array [
     "createdOn": undefined,
     "displayName": "ProfileHelper",
     "name": "profilehelper",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -727,6 +792,7 @@ Array [
     "createdOn": undefined,
     "displayName": "System Preferences",
     "name": "system preferences",
+    "version": "14.0",
   },
   Object {
     "_class": Array [
@@ -738,6 +804,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Installer",
     "name": "installer",
+    "version": "6.2.0",
   },
   Object {
     "_class": Array [
@@ -749,6 +816,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Messages",
     "name": "messages",
+    "version": "14.0",
   },
   Object {
     "_class": Array [
@@ -760,6 +828,7 @@ Array [
     "createdOn": undefined,
     "displayName": "DiskImageMounter",
     "name": "diskimagemounter",
+    "version": "595.40.1",
   },
   Object {
     "_class": Array [
@@ -771,6 +840,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Summary Service",
     "name": "summary service",
+    "version": "2.0",
   },
   Object {
     "_class": Array [
@@ -782,6 +852,7 @@ Array [
     "createdOn": undefined,
     "displayName": "universalAccessAuthWarn",
     "name": "universalaccessauthwarn",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -793,6 +864,7 @@ Array [
     "createdOn": undefined,
     "displayName": "UniversalAccessHUD",
     "name": "universalaccesshud",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -804,6 +876,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AXVisualSupportAgent",
     "name": "axvisualsupportagent",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -815,6 +888,7 @@ Array [
     "createdOn": undefined,
     "displayName": "syncuid",
     "name": "syncuid",
+    "version": "8.1",
   },
   Object {
     "_class": Array [
@@ -826,6 +900,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Conflict Resolver",
     "name": "conflict resolver",
+    "version": "8.1",
   },
   Object {
     "_class": Array [
@@ -837,6 +912,7 @@ Array [
     "createdOn": undefined,
     "displayName": "STMUIHelper",
     "name": "stmuihelper",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -848,6 +924,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Speech Downloader",
     "name": "speech downloader",
+    "version": "9.0.30",
   },
   Object {
     "_class": Array [
@@ -859,6 +936,7 @@ Array [
     "createdOn": undefined,
     "displayName": "SoftwareUpdateNotificationManager",
     "name": "softwareupdatenotificationmanager",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -870,6 +948,7 @@ Array [
     "createdOn": undefined,
     "displayName": "VoiceOver Quickstart",
     "name": "voiceover quickstart",
+    "version": "10",
   },
   Object {
     "_class": Array [
@@ -881,6 +960,7 @@ Array [
     "createdOn": undefined,
     "displayName": "SpeechSynthesizerAuditor",
     "name": "speechsynthesizerauditor",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -892,6 +972,7 @@ Array [
     "createdOn": undefined,
     "displayName": "ScreenReaderUIServer",
     "name": "screenreaderuiserver",
+    "version": "10",
   },
   Object {
     "_class": Array [
@@ -903,6 +984,7 @@ Array [
     "createdOn": undefined,
     "displayName": "nbagent",
     "name": "nbagent",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -914,6 +996,7 @@ Array [
     "createdOn": undefined,
     "displayName": "identityservicesd",
     "name": "identityservicesd",
+    "version": "10.0",
   },
   Object {
     "_class": Array [
@@ -925,6 +1008,7 @@ Array [
     "createdOn": undefined,
     "displayName": "FindMyMacMessenger",
     "name": "findmymacmessenger",
+    "version": "4.1",
   },
   Object {
     "_class": Array [
@@ -936,6 +1020,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Family (OSX)",
     "name": "family (osx)",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -947,6 +1032,7 @@ Array [
     "createdOn": undefined,
     "displayName": "ParentalControls",
     "name": "parentalcontrols",
+    "version": "4.1",
   },
   Object {
     "_class": Array [
@@ -958,6 +1044,7 @@ Array [
     "createdOn": undefined,
     "displayName": "eaptlstrust",
     "name": "eaptlstrust",
+    "version": "13.0",
   },
   Object {
     "_class": Array [
@@ -969,6 +1056,7 @@ Array [
     "createdOn": undefined,
     "displayName": "DiskImages UI Agent",
     "name": "diskimages ui agent",
+    "version": "595.40.1",
   },
   Object {
     "_class": Array [
@@ -980,6 +1068,7 @@ Array [
     "createdOn": undefined,
     "displayName": "FollowUpUI",
     "name": "followupui",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -991,6 +1080,7 @@ Array [
     "createdOn": undefined,
     "displayName": "CIMFindInputCodeTool",
     "name": "cimfindinputcodetool",
+    "version": "104",
   },
   Object {
     "_class": Array [
@@ -1002,6 +1092,7 @@ Array [
     "createdOn": undefined,
     "displayName": "storeuid",
     "name": "storeuid",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1013,6 +1104,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AskPermissionUI",
     "name": "askpermissionui",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1024,6 +1116,7 @@ Array [
     "createdOn": undefined,
     "displayName": "KerberosMenuExtra",
     "name": "kerberosmenuextra",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1035,6 +1128,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AppSSOAgent",
     "name": "appssoagent",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1046,6 +1140,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Calibration Assistant",
     "name": "calibration assistant",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1057,6 +1152,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AOSPushRelay",
     "name": "aospushrelay",
+    "version": "1.07",
   },
   Object {
     "_class": Array [
@@ -1068,6 +1164,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AOSHeartbeat",
     "name": "aosheartbeat",
+    "version": "1.07",
   },
   Object {
     "_class": Array [
@@ -1079,6 +1176,7 @@ Array [
     "createdOn": undefined,
     "displayName": "iCloudUserNotificationsd",
     "name": "icloudusernotificationsd",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1090,6 +1188,7 @@ Array [
     "createdOn": undefined,
     "displayName": "VietnameseIM",
     "name": "vietnameseim",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1101,6 +1200,7 @@ Array [
     "createdOn": undefined,
     "displayName": "TrackpadIM",
     "name": "trackpadim",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1112,6 +1212,7 @@ Array [
     "createdOn": undefined,
     "displayName": "TYIM",
     "name": "tyim",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1123,6 +1224,7 @@ Array [
     "createdOn": undefined,
     "displayName": "TCIM",
     "name": "tcim",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1134,6 +1236,7 @@ Array [
     "createdOn": undefined,
     "displayName": "SCIM",
     "name": "scim",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1145,6 +1248,7 @@ Array [
     "createdOn": undefined,
     "displayName": "PressAndHold",
     "name": "pressandhold",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1156,6 +1260,7 @@ Array [
     "createdOn": undefined,
     "displayName": "PluginIM",
     "name": "pluginim",
+    "version": "24",
   },
   Object {
     "_class": Array [
@@ -1167,6 +1272,7 @@ Array [
     "createdOn": undefined,
     "displayName": "KoreanIM",
     "name": "koreanim",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1178,6 +1284,7 @@ Array [
     "createdOn": undefined,
     "displayName": "JapaneseIM-RomajiTyping",
     "name": "japaneseim-romajityping",
+    "version": "6.3",
   },
   Object {
     "_class": Array [
@@ -1189,6 +1296,7 @@ Array [
     "createdOn": undefined,
     "displayName": "JapaneseIM-KanaTyping",
     "name": "japaneseim-kanatyping",
+    "version": "6.3",
   },
   Object {
     "_class": Array [
@@ -1200,6 +1308,7 @@ Array [
     "createdOn": undefined,
     "displayName": "HindiIM",
     "name": "hindiim",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1211,6 +1320,7 @@ Array [
     "createdOn": undefined,
     "displayName": "EmojiFunctionRowIM",
     "name": "emojifunctionrowim",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1222,6 +1332,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Dictation",
     "name": "dictation",
+    "version": "6.0.87.2",
   },
   Object {
     "_class": Array [
@@ -1233,6 +1344,7 @@ Array [
     "createdOn": undefined,
     "displayName": "CharacterPalette",
     "name": "characterpalette",
+    "version": "2.0.1",
   },
   Object {
     "_class": Array [
@@ -1244,6 +1356,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Assistive Control",
     "name": "assistive control",
+    "version": "2.0",
   },
   Object {
     "_class": Array [
@@ -1255,6 +1368,7 @@ Array [
     "createdOn": undefined,
     "displayName": "PTPCamera",
     "name": "ptpcamera",
+    "version": "1708.1",
   },
   Object {
     "_class": Array [
@@ -1266,6 +1380,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AirScanScanner",
     "name": "airscanscanner",
+    "version": "16",
   },
   Object {
     "_class": Array [
@@ -1277,6 +1392,7 @@ Array [
     "createdOn": undefined,
     "displayName": "MakePDF",
     "name": "makepdf",
+    "version": "10.1",
   },
   Object {
     "_class": Array [
@@ -1288,6 +1404,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Build Web Page",
     "name": "build web page",
+    "version": "10.1",
   },
   Object {
     "_class": Array [
@@ -1299,6 +1416,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Quick Look Simulator",
     "name": "quick look simulator",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1310,6 +1428,7 @@ Array [
     "createdOn": undefined,
     "displayName": "SmartCard Pairing",
     "name": "smartcard pairing",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1321,6 +1440,7 @@ Array [
     "createdOn": undefined,
     "displayName": "PrinterProxy",
     "name": "printerproxy",
+    "version": "16",
   },
   Object {
     "_class": Array [
@@ -1332,6 +1452,7 @@ Array [
     "createdOn": undefined,
     "displayName": "FontRegistryUIAgent",
     "name": "fontregistryuiagent",
+    "version": "81.0",
   },
   Object {
     "_class": Array [
@@ -1343,6 +1464,7 @@ Array [
     "createdOn": undefined,
     "displayName": "ABAssistantService",
     "name": "abassistantservice",
+    "version": "11.0",
   },
   Object {
     "_class": Array [
@@ -1354,6 +1476,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AddressBookSync",
     "name": "addressbooksync",
+    "version": "11.0",
   },
   Object {
     "_class": Array [
@@ -1365,6 +1488,7 @@ Array [
     "createdOn": undefined,
     "displayName": "screencaptureui",
     "name": "screencaptureui",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1376,6 +1500,7 @@ Array [
     "createdOn": undefined,
     "displayName": "loginwindow",
     "name": "loginwindow",
+    "version": "9.0",
   },
   Object {
     "_class": Array [
@@ -1387,6 +1512,7 @@ Array [
     "createdOn": undefined,
     "displayName": "iCloud",
     "name": "icloud",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1398,6 +1524,7 @@ Array [
     "createdOn": undefined,
     "displayName": "WidgetKit Simulator",
     "name": "widgetkit simulator",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1409,6 +1536,7 @@ Array [
     "createdOn": undefined,
     "displayName": "WiFiAgent",
     "name": "wifiagent",
+    "version": "17.0",
   },
   Object {
     "_class": Array [
@@ -1420,6 +1548,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Watch Face Help",
     "name": "watch face help",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1431,6 +1560,7 @@ Array [
     "createdOn": undefined,
     "displayName": "UnmountAssistantAgent",
     "name": "unmountassistantagent",
+    "version": "5.0",
   },
   Object {
     "_class": Array [
@@ -1442,6 +1572,7 @@ Array [
     "createdOn": undefined,
     "displayName": "UniversalAccessControl",
     "name": "universalaccesscontrol",
+    "version": "7.0",
   },
   Object {
     "_class": Array [
@@ -1453,6 +1584,7 @@ Array [
     "createdOn": undefined,
     "displayName": "ThermalTrap",
     "name": "thermaltrap",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1464,6 +1596,7 @@ Array [
     "createdOn": undefined,
     "displayName": "SystemUIServer",
     "name": "systemuiserver",
+    "version": "1.7",
   },
   Object {
     "_class": Array [
@@ -1475,6 +1608,7 @@ Array [
     "createdOn": undefined,
     "displayName": "System Events",
     "name": "system events",
+    "version": "1.3.6",
   },
   Object {
     "_class": Array [
@@ -1486,6 +1620,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Spotlight",
     "name": "spotlight",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1497,6 +1632,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Software Update",
     "name": "software update",
+    "version": "6",
   },
   Object {
     "_class": Array [
@@ -1508,6 +1644,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Siri",
     "name": "siri",
+    "version": "201.3.3",
   },
   Object {
     "_class": Array [
@@ -1519,6 +1656,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Setup Assistant",
     "name": "setup assistant",
+    "version": "10.10",
   },
   Object {
     "_class": Array [
@@ -1530,6 +1668,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Screen Time",
     "name": "screen time",
+    "version": "3.0",
   },
   Object {
     "_class": Array [
@@ -1541,6 +1680,7 @@ Array [
     "createdOn": undefined,
     "displayName": "SSMenuAgent",
     "name": "ssmenuagent",
+    "version": "3.9.8",
   },
   Object {
     "_class": Array [
@@ -1552,6 +1692,7 @@ Array [
     "createdOn": undefined,
     "displayName": "ARDAgent",
     "name": "ardagent",
+    "version": "3.9.8",
   },
   Object {
     "_class": Array [
@@ -1563,6 +1704,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Problem Reporter",
     "name": "problem reporter",
+    "version": "10.13",
   },
   Object {
     "_class": Array [
@@ -1574,6 +1716,7 @@ Array [
     "createdOn": undefined,
     "displayName": "PodcastsAuthAgent",
     "name": "podcastsauthagent",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1585,6 +1728,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Photo Library Migration Utility",
     "name": "photo library migration utility",
+    "version": "2.0",
   },
   Object {
     "_class": Array [
@@ -1596,6 +1740,7 @@ Array [
     "createdOn": undefined,
     "displayName": "OBEXAgent",
     "name": "obexagent",
+    "version": "8.0.3",
   },
   Object {
     "_class": Array [
@@ -1607,6 +1752,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Notification Center",
     "name": "notification center",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1618,6 +1764,7 @@ Array [
     "createdOn": undefined,
     "displayName": "NetAuthAgent",
     "name": "netauthagent",
+    "version": "6.2",
   },
   Object {
     "_class": Array [
@@ -1629,6 +1776,7 @@ Array [
     "createdOn": undefined,
     "displayName": "ManagedClient",
     "name": "managedclient",
+    "version": "13.1",
   },
   Object {
     "_class": Array [
@@ -1640,6 +1788,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Language Chooser",
     "name": "language chooser",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1651,6 +1800,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Keychain Circle Notification",
     "name": "keychain circle notification",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1662,6 +1812,7 @@ Array [
     "createdOn": undefined,
     "displayName": "KeyboardSetupAssistant",
     "name": "keyboardsetupassistant",
+    "version": "10.7",
   },
   Object {
     "_class": Array [
@@ -1673,6 +1824,7 @@ Array [
     "createdOn": undefined,
     "displayName": "KeyboardAccessAgent",
     "name": "keyboardaccessagent",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1684,6 +1836,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Installer Progress",
     "name": "installer progress",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1695,6 +1848,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Install in Progress",
     "name": "install in progress",
+    "version": "3.0",
   },
   Object {
     "_class": Array [
@@ -1706,6 +1860,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Install Command Line Developer Tools",
     "name": "install command line developer tools",
+    "version": "2384",
   },
   Object {
     "_class": Array [
@@ -1717,6 +1872,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Image Events",
     "name": "image events",
+    "version": "1.1.6",
   },
   Object {
     "_class": Array [
@@ -1728,6 +1884,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Games",
     "name": "games",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1739,6 +1896,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Dock",
     "name": "dock",
+    "version": "1.8",
   },
   Object {
     "_class": Array [
@@ -1750,6 +1908,7 @@ Array [
     "createdOn": undefined,
     "displayName": "CoreServicesUIAgent",
     "name": "coreservicesuiagent",
+    "version": "358.5",
   },
   Object {
     "_class": Array [
@@ -1761,6 +1920,7 @@ Array [
     "createdOn": undefined,
     "displayName": "ControlStrip",
     "name": "controlstrip",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1772,6 +1932,7 @@ Array [
     "createdOn": undefined,
     "displayName": "ControlCenter",
     "name": "controlcenter",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1783,6 +1944,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Clock",
     "name": "clock",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -1794,6 +1956,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Weather",
     "name": "weather",
+    "version": "1.3",
   },
   Object {
     "_class": Array [
@@ -1805,6 +1968,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Certificate Assistant",
     "name": "certificate assistant",
+    "version": "5.0",
   },
   Object {
     "_class": Array [
@@ -1816,6 +1980,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Captive Network Assistant",
     "name": "captive network assistant",
+    "version": "5.0",
   },
   Object {
     "_class": Array [
@@ -1827,6 +1992,7 @@ Array [
     "createdOn": undefined,
     "displayName": "BluetoothUIServer",
     "name": "bluetoothuiserver",
+    "version": "8.0.3",
   },
   Object {
     "_class": Array [
@@ -1838,6 +2004,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AppleScript Utility",
     "name": "applescript utility",
+    "version": "1.1.2",
   },
   Object {
     "_class": Array [
@@ -1849,6 +2016,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AddPrinter",
     "name": "addprinter",
+    "version": "16",
   },
   Object {
     "_class": Array [
@@ -1860,6 +2028,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AVB Audio Configuration",
     "name": "avb audio configuration",
+    "version": "930.1",
   },
   Object {
     "_class": Array [
@@ -1871,6 +2040,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Display Calibrator",
     "name": "display calibrator",
+    "version": "4.12.0",
   },
   Object {
     "_class": Array [
@@ -1882,6 +2052,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Finder",
     "name": "finder",
+    "version": "11.1",
   },
   Object {
     "_class": Array [
@@ -1893,6 +2064,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Notes",
     "name": "notes",
+    "version": "4.8",
   },
   Object {
     "_class": Array [
@@ -1904,6 +2076,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Mail",
     "name": "mail",
+    "version": "14.0",
   },
   Object {
     "_class": Array [
@@ -1915,6 +2088,7 @@ Array [
     "createdOn": undefined,
     "displayName": "HelpViewer",
     "name": "helpviewer",
+    "version": "6.0",
   },
   Object {
     "_class": Array [
@@ -1926,6 +2100,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Wireless Diagnostics",
     "name": "wireless diagnostics",
+    "version": "11.0",
   },
   Object {
     "_class": Array [
@@ -1937,6 +2112,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Screen Sharing",
     "name": "screen sharing",
+    "version": "550.19",
   },
   Object {
     "_class": Array [
@@ -1948,6 +2124,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Directory Utility",
     "name": "directory utility",
+    "version": "6.0",
   },
   Object {
     "_class": Array [
@@ -1959,6 +2136,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Archive Utility",
     "name": "archive utility",
+    "version": "10.15",
   },
   Object {
     "_class": Array [
@@ -1970,6 +2148,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Voice Memos",
     "name": "voice memos",
+    "version": "2.2",
   },
   Object {
     "_class": Array [
@@ -1981,6 +2160,7 @@ Array [
     "createdOn": undefined,
     "displayName": "VoiceOver Utility",
     "name": "voiceover utility",
+    "version": "10",
   },
   Object {
     "_class": Array [
@@ -1992,6 +2172,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Terminal",
     "name": "terminal",
+    "version": "2.11",
   },
   Object {
     "_class": Array [
@@ -2003,6 +2184,7 @@ Array [
     "createdOn": undefined,
     "displayName": "System Information",
     "name": "system information",
+    "version": "11.0",
   },
   Object {
     "_class": Array [
@@ -2014,6 +2196,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Script Editor",
     "name": "script editor",
+    "version": "2.11",
   },
   Object {
     "_class": Array [
@@ -2025,6 +2208,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Keychain Access",
     "name": "keychain access",
+    "version": "11.0",
   },
   Object {
     "_class": Array [
@@ -2036,6 +2220,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Grapher",
     "name": "grapher",
+    "version": "2.7",
   },
   Object {
     "_class": Array [
@@ -2047,6 +2232,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Disk Utility",
     "name": "disk utility",
+    "version": "20.1",
   },
   Object {
     "_class": Array [
@@ -2058,6 +2244,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Console",
     "name": "console",
+    "version": "1.1",
   },
   Object {
     "_class": Array [
@@ -2069,6 +2256,7 @@ Array [
     "createdOn": undefined,
     "displayName": "ColorSync Utility",
     "name": "colorsync utility",
+    "version": "4.14.0",
   },
   Object {
     "_class": Array [
@@ -2080,6 +2268,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Boot Camp Assistant",
     "name": "boot camp assistant",
+    "version": "6.1.0",
   },
   Object {
     "_class": Array [
@@ -2091,6 +2280,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Bluetooth File Exchange",
     "name": "bluetooth file exchange",
+    "version": "8.0.3",
   },
   Object {
     "_class": Array [
@@ -2102,6 +2292,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Audio MIDI Setup",
     "name": "audio midi setup",
+    "version": "3.5",
   },
   Object {
     "_class": Array [
@@ -2113,6 +2304,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AirPort Utility",
     "name": "airport utility",
+    "version": "6.3.9",
   },
   Object {
     "_class": Array [
@@ -2124,6 +2316,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Activity Monitor",
     "name": "activity monitor",
+    "version": "10.14",
   },
   Object {
     "_class": Array [
@@ -2135,6 +2328,7 @@ Array [
     "createdOn": undefined,
     "displayName": "TextEdit",
     "name": "textedit",
+    "version": "1.16",
   },
   Object {
     "_class": Array [
@@ -2146,6 +2340,7 @@ Array [
     "createdOn": undefined,
     "displayName": "TV",
     "name": "tv",
+    "version": "1.1.3",
   },
   Object {
     "_class": Array [
@@ -2157,6 +2352,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Stocks",
     "name": "stocks",
+    "version": "3.2.1",
   },
   Object {
     "_class": Array [
@@ -2168,6 +2364,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Stickies",
     "name": "stickies",
+    "version": "10.2",
   },
   Object {
     "_class": Array [
@@ -2179,6 +2376,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Reminders",
     "name": "reminders",
+    "version": "7.0",
   },
   Object {
     "_class": Array [
@@ -2190,6 +2388,7 @@ Array [
     "createdOn": undefined,
     "displayName": "QuickTime Player",
     "name": "quicktime player",
+    "version": "10.5",
   },
   Object {
     "_class": Array [
@@ -2201,6 +2400,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Preview",
     "name": "preview",
+    "version": "11.0",
   },
   Object {
     "_class": Array [
@@ -2212,6 +2412,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Podcasts",
     "name": "podcasts",
+    "version": "1.1.0",
   },
   Object {
     "_class": Array [
@@ -2223,6 +2424,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Photos",
     "name": "photos",
+    "version": "6.0",
   },
   Object {
     "_class": Array [
@@ -2234,6 +2436,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Photo Booth",
     "name": "photo booth",
+    "version": "11.0",
   },
   Object {
     "_class": Array [
@@ -2245,6 +2448,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Music",
     "name": "music",
+    "version": "1.1.3",
   },
   Object {
     "_class": Array [
@@ -2256,6 +2460,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Maps",
     "name": "maps",
+    "version": "3.0",
   },
   Object {
     "_class": Array [
@@ -2267,6 +2472,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Home",
     "name": "home",
+    "version": "5.0",
   },
   Object {
     "_class": Array [
@@ -2278,6 +2484,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Font Book",
     "name": "font book",
+    "version": "10.0",
   },
   Object {
     "_class": Array [
@@ -2289,6 +2496,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Find My",
     "name": "find my",
+    "version": "2.0",
   },
   Object {
     "_class": Array [
@@ -2300,6 +2508,7 @@ Array [
     "createdOn": undefined,
     "displayName": "FaceTime",
     "name": "facetime",
+    "version": "5.0",
   },
   Object {
     "_class": Array [
@@ -2311,6 +2520,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Dictionary",
     "name": "dictionary",
+    "version": "2.3.0",
   },
   Object {
     "_class": Array [
@@ -2322,6 +2532,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Contacts",
     "name": "contacts",
+    "version": "13.0",
   },
   Object {
     "_class": Array [
@@ -2333,6 +2544,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Chess",
     "name": "chess",
+    "version": "3.18",
   },
   Object {
     "_class": Array [
@@ -2344,6 +2556,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Calendar",
     "name": "calendar",
+    "version": "11.0",
   },
   Object {
     "_class": Array [
@@ -2355,6 +2568,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Calculator",
     "name": "calculator",
+    "version": "10.16",
   },
   Object {
     "_class": Array [
@@ -2366,6 +2580,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Books",
     "name": "books",
+    "version": "3.1",
   },
   Object {
     "_class": Array [
@@ -2377,6 +2592,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Automator",
     "name": "automator",
+    "version": "2.10",
   },
   Object {
     "_class": Array [
@@ -2388,6 +2604,7 @@ Array [
     "createdOn": undefined,
     "displayName": "App Store",
     "name": "app store",
+    "version": "3.0",
   },
   Object {
     "_class": Array [
@@ -2399,6 +2616,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Recents",
     "name": "recents",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2410,6 +2628,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Computer",
     "name": "computer",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2421,6 +2640,7 @@ Array [
     "createdOn": undefined,
     "displayName": "iCloud Drive",
     "name": "icloud drive",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2432,6 +2652,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Network",
     "name": "network",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2443,6 +2664,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AirDrop",
     "name": "airdrop",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2454,6 +2676,7 @@ Array [
     "createdOn": undefined,
     "displayName": "iOS App Installer",
     "name": "ios app installer",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2465,6 +2688,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Storage Management",
     "name": "storage management",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2476,6 +2700,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Ticket Viewer",
     "name": "ticket viewer",
+    "version": "4.1",
   },
   Object {
     "_class": Array [
@@ -2487,6 +2712,7 @@ Array [
     "createdOn": undefined,
     "displayName": "About This Mac",
     "name": "about this mac",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2498,6 +2724,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Network Utility",
     "name": "network utility",
+    "version": "1.9.2",
   },
   Object {
     "_class": Array [
@@ -2509,6 +2736,7 @@ Array [
     "createdOn": undefined,
     "displayName": "DVD Player",
     "name": "dvd player",
+    "version": "6.0",
   },
   Object {
     "_class": Array [
@@ -2520,6 +2748,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Expansion Slot Utility",
     "name": "expansion slot utility",
+    "version": "2.0",
   },
   Object {
     "_class": Array [
@@ -2531,6 +2760,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Folder Actions Setup",
     "name": "folder actions setup",
+    "version": "1.2",
   },
   Object {
     "_class": Array [
@@ -2542,6 +2772,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Feedback Assistant",
     "name": "feedback assistant",
+    "version": "5.0",
   },
   Object {
     "_class": Array [
@@ -2553,6 +2784,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Migration Assistant",
     "name": "migration assistant",
+    "version": "11.2",
   },
   Object {
     "_class": Array [
@@ -2564,6 +2796,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Screenshot",
     "name": "screenshot",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2575,6 +2808,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Digital Color Meter",
     "name": "digital color meter",
+    "version": "5.22",
   },
   Object {
     "_class": Array [
@@ -2586,6 +2820,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Time Machine",
     "name": "time machine",
+    "version": "1.3",
   },
   Object {
     "_class": Array [
@@ -2597,6 +2832,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Image Capture",
     "name": "image capture",
+    "version": "8.0",
   },
   Object {
     "_class": Array [
@@ -2608,6 +2844,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Mission Control",
     "name": "mission control",
+    "version": "1.2",
   },
   Object {
     "_class": Array [
@@ -2619,6 +2856,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Launchpad",
     "name": "launchpad",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2630,6 +2868,7 @@ Array [
     "createdOn": undefined,
     "displayName": "News",
     "name": "news",
+    "version": "6.2.1",
   },
   Object {
     "_class": Array [
@@ -2641,6 +2880,7 @@ Array [
     "createdOn": undefined,
     "displayName": "ChineseTextConverterService",
     "name": "chinesetextconverterservice",
+    "version": "2.1",
   },
   Object {
     "_class": Array [
@@ -2652,6 +2892,7 @@ Array [
     "createdOn": undefined,
     "displayName": "UASharedPasteboardProgressUI",
     "name": "uasharedpasteboardprogressui",
+    "version": "54.1",
   },
   Object {
     "_class": Array [
@@ -2663,6 +2904,7 @@ Array [
     "createdOn": undefined,
     "displayName": "DFRHUD",
     "name": "dfrhud",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2674,6 +2916,7 @@ Array [
     "createdOn": undefined,
     "displayName": "SpeechRecognitionServer",
     "name": "speechrecognitionserver",
+    "version": "9.0.30",
   },
   Object {
     "_class": Array [
@@ -2685,6 +2928,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AquaAppearanceHelper",
     "name": "aquaappearancehelper",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2696,6 +2940,7 @@ Array [
     "createdOn": undefined,
     "displayName": "IDSRemoteURLConnectionAgent",
     "name": "idsremoteurlconnectionagent",
+    "version": "10.0",
   },
   Object {
     "_class": Array [
@@ -2707,6 +2952,7 @@ Array [
     "createdOn": undefined,
     "displayName": "IMTransferAgent",
     "name": "imtransferagent",
+    "version": "10.0",
   },
   Object {
     "_class": Array [
@@ -2718,6 +2964,7 @@ Array [
     "createdOn": undefined,
     "displayName": "IMAutomaticHistoryDeletionAgent",
     "name": "imautomatichistorydeletionagent",
+    "version": "10.0",
   },
   Object {
     "_class": Array [
@@ -2729,6 +2976,7 @@ Array [
     "createdOn": undefined,
     "displayName": "imagent",
     "name": "imagent",
+    "version": "10.0",
   },
   Object {
     "_class": Array [
@@ -2740,6 +2988,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AccessibilityVisualsAgent",
     "name": "accessibilityvisualsagent",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2751,6 +3000,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AOSAlertManager",
     "name": "aosalertmanager",
+    "version": "1.07",
   },
   Object {
     "_class": Array [
@@ -2762,6 +3012,7 @@ Array [
     "createdOn": undefined,
     "displayName": "TamilIM",
     "name": "tamilim",
+    "version": "1.6",
   },
   Object {
     "_class": Array [
@@ -2773,6 +3024,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AinuIM",
     "name": "ainuim",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2784,6 +3036,7 @@ Array [
     "createdOn": undefined,
     "displayName": "50onPaletteServer",
     "name": "50onpaletteserver",
+    "version": "1.1.0",
   },
   Object {
     "_class": Array [
@@ -2795,6 +3048,7 @@ Array [
     "createdOn": undefined,
     "displayName": "VirtualScanner",
     "name": "virtualscanner",
+    "version": "1708.1",
   },
   Object {
     "_class": Array [
@@ -2806,6 +3060,7 @@ Array [
     "createdOn": undefined,
     "displayName": "MassStorageCamera",
     "name": "massstoragecamera",
+    "version": "1708.1",
   },
   Object {
     "_class": Array [
@@ -2817,6 +3072,7 @@ Array [
     "createdOn": undefined,
     "displayName": "SyncServer",
     "name": "syncserver",
+    "version": "8.1",
   },
   Object {
     "_class": Array [
@@ -2828,6 +3084,7 @@ Array [
     "createdOn": undefined,
     "displayName": "WebKitPluginHost",
     "name": "webkitpluginhost",
+    "version": "610",
   },
   Object {
     "_class": Array [
@@ -2839,6 +3096,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Wish",
     "name": "wish",
+    "version": "8.5.9",
   },
   Object {
     "_class": Array [
@@ -2850,6 +3108,7 @@ Array [
     "createdOn": undefined,
     "displayName": "quicklookd",
     "name": "quicklookd",
+    "version": "5.0",
   },
   Object {
     "_class": Array [
@@ -2861,6 +3120,7 @@ Array [
     "createdOn": undefined,
     "displayName": "qlmanage",
     "name": "qlmanage",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2872,6 +3132,7 @@ Array [
     "createdOn": undefined,
     "displayName": "QuickLookUIHelper",
     "name": "quicklookuihelper",
+    "version": "5.0",
   },
   Object {
     "_class": Array [
@@ -2883,6 +3144,7 @@ Array [
     "createdOn": undefined,
     "displayName": "SpeechSynthesisServer",
     "name": "speechsynthesisserver",
+    "version": "9.0.51.2",
   },
   Object {
     "_class": Array [
@@ -2894,6 +3156,7 @@ Array [
     "createdOn": undefined,
     "displayName": "VoiceOver",
     "name": "voiceover",
+    "version": "10",
   },
   Object {
     "_class": Array [
@@ -2905,6 +3168,7 @@ Array [
     "createdOn": undefined,
     "displayName": "SpacesTouchBarAgent",
     "name": "spacestouchbaragent",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2916,6 +3180,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AddressBookSourceSync",
     "name": "addressbooksourcesync",
+    "version": "11.0",
   },
   Object {
     "_class": Array [
@@ -2927,6 +3192,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AddressBookManager",
     "name": "addressbookmanager",
+    "version": "11.0",
   },
   Object {
     "_class": Array [
@@ -2938,6 +3204,7 @@ Array [
     "createdOn": undefined,
     "displayName": "rcd",
     "name": "rcd",
+    "version": "360",
   },
   Object {
     "_class": Array [
@@ -2949,6 +3216,7 @@ Array [
     "createdOn": undefined,
     "displayName": "UIKitSystem",
     "name": "uikitsystem",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -2960,6 +3228,7 @@ Array [
     "createdOn": undefined,
     "displayName": "TMHelperAgent",
     "name": "tmhelperagent",
+    "version": "10.9",
   },
   Object {
     "_class": Array [
@@ -2971,6 +3240,7 @@ Array [
     "createdOn": undefined,
     "displayName": "UserNotificationCenter",
     "name": "usernotificationcenter",
+    "version": "64.101",
   },
   Object {
     "_class": Array [
@@ -2982,6 +3252,7 @@ Array [
     "createdOn": undefined,
     "displayName": "TextInputSwitcher",
     "name": "textinputswitcher",
+    "version": "1.1",
   },
   Object {
     "_class": Array [
@@ -2993,6 +3264,7 @@ Array [
     "createdOn": undefined,
     "displayName": "TextInputMenuAgent",
     "name": "textinputmenuagent",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -3004,6 +3276,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Script Menu",
     "name": "script menu",
+    "version": "1",
   },
   Object {
     "_class": Array [
@@ -3015,6 +3288,7 @@ Array [
     "createdOn": undefined,
     "displayName": "ScriptMonitor",
     "name": "scriptmonitor",
+    "version": "1.0.1",
   },
   Object {
     "_class": Array [
@@ -3026,6 +3300,7 @@ Array [
     "createdOn": undefined,
     "displayName": "ScreenSaverEngine",
     "name": "screensaverengine",
+    "version": "5.0",
   },
   Object {
     "_class": Array [
@@ -3037,6 +3312,7 @@ Array [
     "createdOn": undefined,
     "displayName": "SSInvitationAgent",
     "name": "ssinvitationagent",
+    "version": "3.9.8",
   },
   Object {
     "_class": Array [
@@ -3048,6 +3324,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Rosetta 2 Updater",
     "name": "rosetta 2 updater",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -3059,6 +3336,7 @@ Array [
     "createdOn": undefined,
     "displayName": "ReportPanic",
     "name": "reportpanic",
+    "version": "10.13",
   },
   Object {
     "_class": Array [
@@ -3070,6 +3348,7 @@ Array [
     "createdOn": undefined,
     "displayName": "SSAssistanceCursor",
     "name": "ssassistancecursor",
+    "version": "3.9.8",
   },
   Object {
     "_class": Array [
@@ -3081,6 +3360,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Share Screen Request",
     "name": "share screen request",
+    "version": "3.9.8",
   },
   Object {
     "_class": Array [
@@ -3092,6 +3372,7 @@ Array [
     "createdOn": undefined,
     "displayName": "RapportUIAgent",
     "name": "rapportuiagent",
+    "version": "2.3.0",
   },
   Object {
     "_class": Array [
@@ -3103,6 +3384,7 @@ Array [
     "createdOn": undefined,
     "displayName": "LockScreen",
     "name": "lockscreen",
+    "version": "3.9.8",
   },
   Object {
     "_class": Array [
@@ -3114,6 +3396,7 @@ Array [
     "createdOn": undefined,
     "displayName": "SSDragHelper",
     "name": "ssdraghelper",
+    "version": "3.9.8",
   },
   Object {
     "_class": Array [
@@ -3125,6 +3408,7 @@ Array [
     "createdOn": undefined,
     "displayName": "RegisterPluginIMApp",
     "name": "registerpluginimapp",
+    "version": "24",
   },
   Object {
     "_class": Array [
@@ -3136,6 +3420,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Paired Devices",
     "name": "paired devices",
+    "version": "2.3.0",
   },
   Object {
     "_class": Array [
@@ -3147,6 +3432,7 @@ Array [
     "createdOn": undefined,
     "displayName": "ODSAgent",
     "name": "odsagent",
+    "version": "1.8",
   },
   Object {
     "_class": Array [
@@ -3158,6 +3444,7 @@ Array [
     "createdOn": undefined,
     "displayName": "PIPAgent",
     "name": "pipagent",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -3169,6 +3456,7 @@ Array [
     "createdOn": undefined,
     "displayName": "NowPlayingTouchUI",
     "name": "nowplayingtouchui",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -3180,6 +3468,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Pass Viewer",
     "name": "pass viewer",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -3191,6 +3480,7 @@ Array [
     "createdOn": undefined,
     "displayName": "OSDUIHelper",
     "name": "osduihelper",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -3202,6 +3492,7 @@ Array [
     "createdOn": undefined,
     "displayName": "PowerChime",
     "name": "powerchime",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -3213,6 +3504,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Memory Slot Utility",
     "name": "memory slot utility",
+    "version": "1.5.3",
   },
   Object {
     "_class": Array [
@@ -3224,6 +3516,7 @@ Array [
     "createdOn": undefined,
     "displayName": "JavaLauncher",
     "name": "javalauncher",
+    "version": "317",
   },
   Object {
     "_class": Array [
@@ -3235,6 +3528,7 @@ Array [
     "createdOn": undefined,
     "displayName": "FileSystemUIAgent",
     "name": "filesystemuiagent",
+    "version": "2.0",
   },
   Object {
     "_class": Array [
@@ -3246,6 +3540,7 @@ Array [
     "createdOn": undefined,
     "displayName": "LocationMenu",
     "name": "locationmenu",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -3257,6 +3552,7 @@ Array [
     "createdOn": undefined,
     "displayName": "FolderActionsDispatcher",
     "name": "folderactionsdispatcher",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -3268,6 +3564,7 @@ Array [
     "createdOn": undefined,
     "displayName": "EscrowSecurityAlert",
     "name": "escrowsecurityalert",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -3279,6 +3576,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Dwell Control",
     "name": "dwell control",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -3290,6 +3588,7 @@ Array [
     "createdOn": undefined,
     "displayName": "DiscHelper",
     "name": "dischelper",
+    "version": "1.0",
   },
   Object {
     "_class": Array [
@@ -3301,6 +3600,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Database Events",
     "name": "database events",
+    "version": "1.0.6",
   },
   Object {
     "_class": Array [
@@ -3312,6 +3612,7 @@ Array [
     "createdOn": undefined,
     "displayName": "CoreLocationAgent",
     "name": "corelocationagent",
+    "version": "2420.12.16",
   },
   Object {
     "_class": Array [
@@ -3323,6 +3624,7 @@ Array [
     "createdOn": undefined,
     "displayName": "CalendarFileHandler",
     "name": "calendarfilehandler",
+    "version": "8.0",
   },
   Object {
     "_class": Array [
@@ -3334,6 +3636,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Automator Installer",
     "name": "automator installer",
+    "version": "2.10",
   },
   Object {
     "_class": Array [
@@ -3345,6 +3648,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Bluetooth Setup Assistant",
     "name": "bluetooth setup assistant",
+    "version": "8.0.3",
   },
   Object {
     "_class": Array [
@@ -3356,6 +3660,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AirPlayUIAgent",
     "name": "airplayuiagent",
+    "version": "2.0",
   },
   Object {
     "_class": Array [
@@ -3367,6 +3672,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AirPort Base Station Agent",
     "name": "airport base station agent",
+    "version": "2.2.1",
   },
   Object {
     "_class": Array [
@@ -3378,6 +3684,7 @@ Array [
     "createdOn": undefined,
     "displayName": "AddressBookUrlForwarder",
     "name": "addressbookurlforwarder",
+    "version": "11.0",
   },
   Object {
     "_class": Array [
@@ -3389,6 +3696,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Automator Application Stub",
     "name": "automator application stub",
+    "version": "1.3",
   },
   Object {
     "_class": Array [
@@ -3400,6 +3708,7 @@ Array [
     "createdOn": undefined,
     "displayName": "j1-endpoint-agent-darwin",
     "name": "j1-endpoint-agent-darwin",
+    "version": null,
   },
   Object {
     "_class": Array [
@@ -3411,6 +3720,7 @@ Array [
     "createdOn": undefined,
     "displayName": "StandaloneUpdaterDaemon",
     "name": "standaloneupdaterdaemon",
+    "version": "20114.0607.0002",
   },
   Object {
     "_class": Array [
@@ -3422,6 +3732,7 @@ Array [
     "createdOn": undefined,
     "displayName": "com.docker.vmnetd",
     "name": "com.docker.vmnetd",
+    "version": "0.3",
   },
   Object {
     "_class": Array [
@@ -3433,6 +3744,7 @@ Array [
     "createdOn": undefined,
     "displayName": "OneDriveUpdaterDaemon",
     "name": "onedriveupdaterdaemon",
+    "version": "21002.0104.0005",
   },
   Object {
     "_class": Array [
@@ -3444,6 +3756,7 @@ Array [
     "createdOn": undefined,
     "displayName": "VMware CarbonBlack Cloud Sensor",
     "name": "vmware carbonblack cloud sensor",
+    "version": "3.5.1fc19",
   },
   Object {
     "_class": Array [
@@ -3455,6 +3768,7 @@ Array [
     "createdOn": undefined,
     "displayName": "pritunl-service",
     "name": "pritunl-service",
+    "version": null,
   },
   Object {
     "_class": Array [
@@ -3466,6 +3780,7 @@ Array [
     "createdOn": undefined,
     "displayName": "OfficeLicensingHelper",
     "name": "officelicensinghelper",
+    "version": null,
   },
   Object {
     "_class": Array [
@@ -3477,6 +3792,7 @@ Array [
     "createdOn": undefined,
     "displayName": "HelperTool",
     "name": "helpertool",
+    "version": "4.31.21011103",
   },
   Object {
     "_class": Array [
@@ -3488,6 +3804,7 @@ Array [
     "createdOn": undefined,
     "displayName": "com.vmware.carbonblack.cloud.ui",
     "name": "com.vmware.carbonblack.cloud.ui",
+    "version": "3.5.1.19",
   },
   Object {
     "_class": Array [
@@ -3499,6 +3816,7 @@ Array [
     "createdOn": undefined,
     "displayName": "StandaloneUpdater",
     "name": "standaloneupdater",
+    "version": "20114.0607.0002",
   },
   Object {
     "_class": Array [
@@ -3510,6 +3828,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Microsoft Update Assistant",
     "name": "microsoft update assistant",
+    "version": "4.31.21011103",
   },
   Object {
     "_class": Array [
@@ -3521,6 +3840,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Comp Portal",
     "name": "comp portal",
+    "version": "4.13.0(52.2102042.000)",
   },
   Object {
     "_class": Array [
@@ -3532,6 +3852,7 @@ Array [
     "createdOn": undefined,
     "displayName": "GRE Vocabulary Flashcards",
     "name": "gre vocabulary flashcards",
+    "version": "314(314.0.0.0)",
   },
   Object {
     "_class": Array [
@@ -3543,6 +3864,7 @@ Array [
     "createdOn": undefined,
     "displayName": "YouTube",
     "name": "youtube",
+    "version": "15.49.4",
   },
   Object {
     "_class": Array [
@@ -3554,6 +3876,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Snapchat",
     "name": "snapchat",
+    "version": "11.8.1(11.8.1.33)",
   },
   Object {
     "_class": Array [
@@ -3565,6 +3888,7 @@ Array [
     "createdOn": undefined,
     "displayName": "MINDBODY",
     "name": "mindbody",
+    "version": "7.4.2(10383)",
   },
   Object {
     "_class": Array [
@@ -3576,6 +3900,7 @@ Array [
     "createdOn": undefined,
     "displayName": "MyFitnessPal",
     "name": "myfitnesspal",
+    "version": "20.24.6(33652)",
   },
   Object {
     "_class": Array [
@@ -3587,6 +3912,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Frontier",
     "name": "frontier",
+    "version": "1.9.2(2)",
   },
   Object {
     "_class": Array [
@@ -3598,6 +3924,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Groupon",
     "name": "groupon",
+    "version": "20.19(312881)",
   },
   Object {
     "_class": Array [
@@ -3609,6 +3936,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Authenticator",
     "name": "authenticator",
+    "version": "3.1.4401",
   },
   Object {
     "_class": Array [
@@ -3620,6 +3948,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Drive",
     "name": "drive",
+    "version": "4.2020.48302",
   },
   Object {
     "_class": Array [
@@ -3631,6 +3960,7 @@ Array [
     "createdOn": undefined,
     "displayName": "myQ",
     "name": "myq",
+    "version": "5.170.0(170.0.23226)",
   },
   Object {
     "_class": Array [
@@ -3642,6 +3972,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Sudoku.com",
     "name": "sudoku.com",
+    "version": "3.8.0(38003)",
   },
   Object {
     "_class": Array [
@@ -3653,6 +3984,7 @@ Array [
     "createdOn": undefined,
     "displayName": "iTunes U",
     "name": "itunes u",
+    "version": "3.8(2525)",
   },
   Object {
     "_class": Array [
@@ -3664,6 +3996,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Gogo Entertainment",
     "name": "gogo entertainment",
+    "version": "56(1.8.0.1)",
   },
   Object {
     "_class": Array [
@@ -3675,6 +4008,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Empower",
     "name": "empower",
+    "version": "1.7.2(1.2.0)",
   },
   Object {
     "_class": Array [
@@ -3686,6 +4020,7 @@ Array [
     "createdOn": undefined,
     "displayName": "LinkedIn",
     "name": "linkedin",
+    "version": "2020.12.14(9.16.4096.5)",
   },
   Object {
     "_class": Array [
@@ -3697,6 +4032,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Audible",
     "name": "audible",
+    "version": "3.38.2(652)",
   },
   Object {
     "_class": Array [
@@ -3708,6 +4044,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Word",
     "name": "word",
+    "version": "2.44(2.44.20121101)",
   },
   Object {
     "_class": Array [
@@ -3719,6 +4056,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Hopper",
     "name": "hopper",
+    "version": "6.50.0(13941)",
   },
   Object {
     "_class": Array [
@@ -3730,6 +4068,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Cash App",
     "name": "cash app",
+    "version": "3.29(3290039)",
   },
   Object {
     "_class": Array [
@@ -3741,6 +4080,7 @@ Array [
     "createdOn": undefined,
     "displayName": "American",
     "name": "american",
+    "version": "2020.20(2)",
   },
   Object {
     "_class": Array [
@@ -3752,6 +4092,7 @@ Array [
     "createdOn": undefined,
     "displayName": "PayPal",
     "name": "paypal",
+    "version": "7.35.0(605)",
   },
   Object {
     "_class": Array [
@@ -3763,6 +4104,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Google Maps",
     "name": "google maps",
+    "version": "5.58.0(5.58.3)",
   },
   Object {
     "_class": Array [
@@ -3774,6 +4116,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Google Photos",
     "name": "google photos",
+    "version": "5.22.0(5.22.344906647)",
   },
   Object {
     "_class": Array [
@@ -3785,6 +4128,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Fly Delta",
     "name": "fly delta",
+    "version": "5.7.1(19702)",
   },
   Object {
     "_class": Array [
@@ -3796,6 +4140,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Lyft",
     "name": "lyft",
+    "version": "6.62.31(6.62.31.114975789)",
   },
   Object {
     "_class": Array [
@@ -3807,6 +4152,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Carta",
     "name": "carta",
+    "version": "3.21.1(24373)",
   },
   Object {
     "_class": Array [
@@ -3818,6 +4164,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Insight Timer",
     "name": "insight timer",
+    "version": "15.11.8(15.11.8.2169)",
   },
   Object {
     "_class": Array [
@@ -3829,6 +4176,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Chrome",
     "name": "chrome",
+    "version": "87.4280.77(86.0.4240.87077)",
   },
   Object {
     "_class": Array [
@@ -3840,6 +4188,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Sheets",
     "name": "sheets",
+    "version": "1.2020.47204",
   },
   Object {
     "_class": Array [
@@ -3851,6 +4200,7 @@ Array [
     "createdOn": undefined,
     "displayName": "OpenTable",
     "name": "opentable",
+    "version": "14.5.1(14.5.1.2)",
   },
   Object {
     "_class": Array [
@@ -3862,6 +4212,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Wallet",
     "name": "wallet",
+    "version": "3.14.0(2018031503)",
   },
   Object {
     "_class": Array [
@@ -3873,6 +4224,7 @@ Array [
     "createdOn": undefined,
     "displayName": "OneNote",
     "name": "onenote",
+    "version": "16.44.1(16044001.20121505)",
   },
   Object {
     "_class": Array [
@@ -3884,6 +4236,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Translate",
     "name": "translate",
+    "version": "6.14.59216",
   },
   Object {
     "_class": Array [
@@ -3895,6 +4248,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Netflix",
     "name": "netflix",
+    "version": "13.9.0(3370)",
   },
   Object {
     "_class": Array [
@@ -3906,6 +4260,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Wells Fargo",
     "name": "wells fargo",
+    "version": "3.272(16)",
   },
   Object {
     "_class": Array [
@@ -3917,6 +4272,7 @@ Array [
     "createdOn": undefined,
     "displayName": "NM",
     "name": "nm",
+    "version": "3.1.0(7761)",
   },
   Object {
     "_class": Array [
@@ -3928,6 +4284,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Hue",
     "name": "hue",
+    "version": "3.45.0(11168)",
   },
   Object {
     "_class": Array [
@@ -3939,6 +4296,7 @@ Array [
     "createdOn": undefined,
     "displayName": "PowerPoint",
     "name": "powerpoint",
+    "version": "2.44(2.44.20121101)",
   },
   Object {
     "_class": Array [
@@ -3950,6 +4308,7 @@ Array [
     "createdOn": undefined,
     "displayName": "McDonald's",
     "name": "mcdonald's",
+    "version": "6.12.0(363)",
   },
   Object {
     "_class": Array [
@@ -3961,6 +4320,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Splitwise",
     "name": "splitwise",
+    "version": "5.3.0(552)",
   },
   Object {
     "_class": Array [
@@ -3972,6 +4332,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Fandango",
     "name": "fandango",
+    "version": "12.7(211)",
   },
   Object {
     "_class": Array [
@@ -3983,6 +4344,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Huemote",
     "name": "huemote",
+    "version": "1.1.3(123)",
   },
   Object {
     "_class": Array [
@@ -3994,6 +4356,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Fantasy",
     "name": "fantasy",
+    "version": "7.6.0(732)",
   },
   Object {
     "_class": Array [
@@ -4005,6 +4368,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Tiny Scanner",
     "name": "tiny scanner",
+    "version": "6.1.4(6140)",
   },
   Object {
     "_class": Array [
@@ -4016,6 +4380,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Docs",
     "name": "docs",
+    "version": "1.2020.47204",
   },
   Object {
     "_class": Array [
@@ -4027,6 +4392,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Authy",
     "name": "authy",
+    "version": "24.4.4(20201202.1)",
   },
   Object {
     "_class": Array [
@@ -4038,6 +4404,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Messenger",
     "name": "messenger",
+    "version": "294.0(262406393)",
   },
   Object {
     "_class": Array [
@@ -4049,6 +4416,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Expensify",
     "name": "expensify",
+    "version": "8.5.20(8.5.20.0)",
   },
   Object {
     "_class": Array [
@@ -4060,6 +4428,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Deepblu",
     "name": "deepblu",
+    "version": "3.5.6(1)",
   },
   Object {
     "_class": Array [
@@ -4071,6 +4440,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Venmo",
     "name": "venmo",
+    "version": "8.12.1(27524)",
   },
   Object {
     "_class": Array [
@@ -4082,6 +4452,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Chess Tactics",
     "name": "chess tactics",
+    "version": "2.03(31)",
   },
   Object {
     "_class": Array [
@@ -4093,6 +4464,7 @@ Array [
     "createdOn": undefined,
     "displayName": "GroupMe",
     "name": "groupme",
+    "version": "5.45.5(5.45.5.1)",
   },
   Object {
     "_class": Array [
@@ -4104,6 +4476,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Bandsintown",
     "name": "bandsintown",
+    "version": "8.2.1(3459)",
   },
   Object {
     "_class": Array [
@@ -4115,6 +4488,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Orangetheory",
     "name": "orangetheory",
+    "version": "4.1.0(3268)",
   },
   Object {
     "_class": Array [
@@ -4126,6 +4500,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Yelp",
     "name": "yelp",
+    "version": "12.76.0(12.76.0.28067)",
   },
   Object {
     "_class": Array [
@@ -4137,6 +4512,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Edge",
     "name": "edge",
+    "version": "46.1.2",
   },
   Object {
     "_class": Array [
@@ -4148,6 +4524,7 @@ Array [
     "createdOn": undefined,
     "displayName": "PADI Library",
     "name": "padi library",
+    "version": "3.0.10(3.0.10.1)",
   },
   Object {
     "_class": Array [
@@ -4159,6 +4536,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Pancheros",
     "name": "pancheros",
+    "version": "2.3(4)",
   },
   Object {
     "_class": Array [
@@ -4170,6 +4548,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Apple Store",
     "name": "apple store",
+    "version": "505000(5.5.0.0480)",
   },
   Object {
     "_class": Array [
@@ -4181,6 +4560,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Spirit",
     "name": "spirit",
+    "version": "1.5.8(182)",
   },
   Object {
     "_class": Array [
@@ -4192,6 +4572,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Anova",
     "name": "anova",
+    "version": "3.2.14(1)",
   },
   Object {
     "_class": Array [
@@ -4203,6 +4584,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Capital One",
     "name": "capital one",
+    "version": "5.75.2(2)",
   },
   Object {
     "_class": Array [
@@ -4214,6 +4596,7 @@ Array [
     "createdOn": undefined,
     "displayName": "OnSwitch",
     "name": "onswitch",
+    "version": "3.0.21(3.0.21.2)",
   },
   Object {
     "_class": Array [
@@ -4225,6 +4608,7 @@ Array [
     "createdOn": undefined,
     "displayName": "NetBenefits",
     "name": "netbenefits",
+    "version": "3.15.0(3.15.1)",
   },
   Object {
     "_class": Array [
@@ -4236,6 +4620,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Mobile Pass",
     "name": "mobile pass",
+    "version": "3.11.0(1608109362)",
   },
   Object {
     "_class": Array [
@@ -4247,6 +4632,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Zen Planner",
     "name": "zen planner",
+    "version": "2.4.32",
   },
   Object {
     "_class": Array [
@@ -4258,6 +4644,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Scanner App",
     "name": "scanner app",
+    "version": "4.3(4.3.7)",
   },
   Object {
     "_class": Array [
@@ -4269,6 +4656,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Bitmoji",
     "name": "bitmoji",
+    "version": "11.7.2(11.7.2.788)",
   },
   Object {
     "_class": Array [
@@ -4280,6 +4668,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Uber",
     "name": "uber",
+    "version": "3.434.10005",
   },
   Object {
     "_class": Array [
@@ -4291,6 +4680,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Cebu Pacific",
     "name": "cebu pacific",
+    "version": "2.58.0(161222)",
   },
   Object {
     "_class": Array [
@@ -4302,6 +4692,7 @@ Array [
     "createdOn": undefined,
     "displayName": "United",
     "name": "united",
+    "version": "4.1.8(4.1.8.1)",
   },
   Object {
     "_class": Array [
@@ -4313,6 +4704,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Excel",
     "name": "excel",
+    "version": "2.44(2.44.20121101)",
   },
   Object {
     "_class": Array [
@@ -4324,6 +4716,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Among Us",
     "name": "among us",
+    "version": "2020.11.17(1)",
   },
   Object {
     "_class": Array [
@@ -4335,6 +4728,7 @@ Array [
     "createdOn": undefined,
     "displayName": "MyChart",
     "name": "mychart",
+    "version": "9.5.5",
   },
   Object {
     "_class": Array [
@@ -4346,6 +4740,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Zoom",
     "name": "zoom",
+    "version": "5.4.6(59285.1207)",
   },
   Object {
     "_class": Array [
@@ -4357,6 +4752,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Google Calendar",
     "name": "google calendar",
+    "version": "20.45.0(20.45.0.52801200)",
   },
   Object {
     "_class": Array [
@@ -4368,6 +4764,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Discord",
     "name": "discord",
+    "version": "53.0(23255)",
   },
   Object {
     "_class": Array [
@@ -4379,6 +4776,7 @@ Array [
     "createdOn": undefined,
     "displayName": "Trello",
     "name": "trello",
+    "version": "2020.16.1(20201214.195337)",
   },
 ]
 `;
