@@ -95,6 +95,7 @@ export function createDetectedApplicationEntity(
         name: detectedApp.displayName?.toLowerCase(),
         displayName: detectedApp.displayName as string,
         version: detectedApp.version,
+        sizeInByte: detectedApp.sizeInByte,
       },
     },
   });
