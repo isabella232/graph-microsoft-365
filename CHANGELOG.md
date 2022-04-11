@@ -8,6 +8,17 @@ and this project adheres to
 
 ## Unreleased
 
+## 6.1.0 - 2022-04-11
+
+### Changed
+
+- Updated `@jupiterone/integration-sdk-*` to `8.10.1`.
+
+### Added
+
+- Added `deviceId` property to `Device` entities to conform to
+  `@jupiterone/data-model`. The property is set to `null`.
+
 ## 6.0.1 - 2022-03-31
 
 ### Changed
