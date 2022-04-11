@@ -83,7 +83,7 @@ export function createManagedDeviceEntity(
         jailBroken: managedDevice.jailBroken !== 'False',
         username: managedDevice.userPrincipalName,
         physical: isPhysicalDevice,
-        // used to map jamf devices
+        // Used to map HOSTAGENT to user_endpoint via user_endpoint's udid
         deviceId: null,
         // POTENTIAL: managedDevice.usersLoggedOn - link out to other users perhaps?
       },
