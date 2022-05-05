@@ -1,0 +1,17 @@
+---
+sourceId: managed:microsoft-365
+integrationDefinitionId: '${integration_definition_id}'
+questions: 
+- id: managed-question-endpoint-intune-detected-application-with-version
+  title: Which Intune monitored end-user devices have a specific app installed?
+  description: Return a list of endpoint devices that have a specified app installed.
+  queries:
+    - query: |
+        FIND user_endpoint AS E 
+        THAT INSTALLED AS R intune_detected_application with displayName ~= '{{Application Name}}' AS A 
+        WHERE R.version ^= '{{Version}}'
+        RETURN E.displayName AS Machine, R.displayName AS Has, A.displayName AS Application, R.version AS Version
+  tags:
+  - Intune
+  - device
+  - endpoint
