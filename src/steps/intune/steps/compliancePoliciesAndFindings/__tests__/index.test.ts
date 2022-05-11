@@ -33,30 +33,31 @@ describe('fetchCompliancePolicyAndFindings', () => {
     const compliancePolicyEntities = context.jobState.collectedEntities.filter(
       (e) => isEqual(e._class, toArray(entities.COMPLIANCE_POLICY._class)),
     );
-    const noncomplianceFindingEntities = context.jobState.collectedEntities.filter(
-      (e) => isEqual(e._class, toArray(entities.NONCOMPLIANCE_FINDING._class)),
-    );
-    const hostAgentCompliancePolicyRelationships = context.jobState.collectedRelationships.filter(
-      (r) =>
+    const noncomplianceFindingEntities =
+      context.jobState.collectedEntities.filter((e) =>
+        isEqual(e._class, toArray(entities.NONCOMPLIANCE_FINDING._class)),
+      );
+    const hostAgentCompliancePolicyRelationships =
+      context.jobState.collectedRelationships.filter((r) =>
         isEqual(
           r._type,
           relationships.HOST_AGENT_ASSIGNED_COMPLIANCE_POLICY._type,
         ),
-    );
-    const compliancePolicyFindingRelationships = context.jobState.collectedRelationships.filter(
-      (r) =>
+      );
+    const compliancePolicyFindingRelationships =
+      context.jobState.collectedRelationships.filter((r) =>
         isEqual(
           r._type,
           relationships.COMPLIANCE_POLICY_IDENTIFIED_NONCOMPLIANCE_FINDING
             ._type,
         ),
-    );
-    const deviceFindingRelationships = context.jobState.collectedRelationships.filter(
-      (r) =>
+      );
+    const deviceFindingRelationships =
+      context.jobState.collectedRelationships.filter((r) =>
         relationships.MULTI_DEVICE_HAS_NONCOMPLIANCE_FINDING.map(
           (c) => c._type,
         ).includes(r._type),
-    );
+      );
 
     // Check that we have Compliance Policies
     expect(compliancePolicyEntities.length).toBeGreaterThan(0);

@@ -33,30 +33,31 @@ describe('fetchDeviceConfigurationsAndFindings', () => {
     const deviceConfigEntities = context.jobState.collectedEntities.filter(
       (e) => isEqual(e._class, toArray(entities.DEVICE_CONFIGURATION._class)),
     );
-    const noncomplianceFindingEntities = context.jobState.collectedEntities.filter(
-      (e) => isEqual(e._class, toArray(entities.NONCOMPLIANCE_FINDING._class)),
-    );
-    const hostAgentDeviceConfigRelationships = context.jobState.collectedRelationships.filter(
-      (r) =>
+    const noncomplianceFindingEntities =
+      context.jobState.collectedEntities.filter((e) =>
+        isEqual(e._class, toArray(entities.NONCOMPLIANCE_FINDING._class)),
+      );
+    const hostAgentDeviceConfigRelationships =
+      context.jobState.collectedRelationships.filter((r) =>
         isEqual(
           r._type,
           relationships.HOST_AGENT_ASSIGNED_DEVICE_CONFIGURATION._type,
         ),
-    );
-    const deviceConfigFindingRelationships = context.jobState.collectedRelationships.filter(
-      (r) =>
+      );
+    const deviceConfigFindingRelationships =
+      context.jobState.collectedRelationships.filter((r) =>
         isEqual(
           r._type,
           relationships.DEVICE_CONFIGURATION_IDENTIFIED_NONCOMPLIANCE_FINDING
             ._type,
         ),
-    );
-    const deviceFindingRelationships = context.jobState.collectedRelationships.filter(
-      (r) =>
+      );
+    const deviceFindingRelationships =
+      context.jobState.collectedRelationships.filter((r) =>
         relationships.MULTI_DEVICE_HAS_NONCOMPLIANCE_FINDING.map(
           (c) => c._type,
         ).includes(r._type),
-    );
+      );
 
     // Check that we have Device Configurations
     expect(deviceConfigEntities.length).toBeGreaterThan(0);

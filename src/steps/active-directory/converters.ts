@@ -134,6 +134,7 @@ export function createOrganizationEntity(data: Organization): Entity {
     entityData: {
       source: data,
       assign: {
+        _key: data.id!,
         _class: entities.ORGANIZATION._class,
         _type: entities.ORGANIZATION._type,
         website: data.verifiedDomains?.map((domain) => domain.name).join(', '),

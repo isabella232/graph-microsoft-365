@@ -8,6 +8,69 @@ and this project adheres to
 
 ## Unreleased
 
+## 6.1.1 - 2022-05-05
+
+### Added
+
+- `code-ql` workflow
+- `questions` workflow
+- managed-questions
+
+## 6.1.0 - 2022-04-11
+
+### Changed
+
+- Updated `@jupiterone/integration-sdk-*` to `8.10.1`.
+
+### Added
+
+- Added `deviceId` property to `Device` entities to conform to
+  `@jupiterone/data-model`. The property is set to `null`.
+
+## 6.0.1 - 2022-03-31
+
+### Changed
+
+- Added `sizeInByte` and `version` to the managed application entity.
+
+## 6.0.0 - 2022-03-21
+
+### Changed
+
+- **BREAKING** - Update `_type` of `smartphone` entity to `user_endpoint` when
+  the device has a `deviceType` with value `windowsRT`
+
+- Update integration SDK packages to v8.6.4
+
+## 5.0.0 - 2022-03-21
+
+### Changed
+
+- SDK version changed to `v8.6.3`
+- Changed all `_class`es to `[]string` from `string`
+- Converters now use explicit `_key`s instead of inheriting from `id`
+- A single test in `src/steps/active-directory/__tests__/index.test.ts` now uses
+  `matchRequestBy: { order: false }`
+
+## 4.0.4 - 2022-03-15
+
+### Changed
+
+- Minor refactors and additional debug logging
+
+## 4.0.3 - 2022-03-14
+
+### Fixed
+
+- Removed `raw_data` from Compliance Policy Entity
+
+## 4.0.2 - 2022-03-11
+
+### Fixed
+
+- Removed `raw_data` from Detected Application Entity
+- Added duplicate key check in `detected-applications` step
+
 ## 4.0.1 - 2021-10-30
 
 - Add a few development conveniences

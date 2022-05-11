@@ -56,10 +56,11 @@ export async function fetchCompliancePolicyAndFindings(
           );
         } else if (deviceIsRelatedToConfig(deviceStatus.status)) {
           // Only once we know the policy is attached to a device do we add it to the jobstate
-          const compliancePolicyEntity = await findOrCreateCompliancePolicyEntity(
-            compliancePolicy,
-            jobState,
-          );
+          const compliancePolicyEntity =
+            await findOrCreateCompliancePolicyEntity(
+              compliancePolicy,
+              jobState,
+            );
 
           const hostAgentAssignedCompliancePolicyKey = generateRelationshipKey(
             relationships.HOST_AGENT_ASSIGNED_COMPLIANCE_POLICY._class,
@@ -109,11 +110,12 @@ export async function fetchCompliancePolicyAndFindings(
                 'Possible duplicate compliancePolicyDeviceStatus',
               );
             } else {
-              const noncomplianceFindingEntity = createNoncomplianceFindingEntity(
-                deviceStatus,
-                compliancePolicyEntity,
-                logger,
-              );
+              const noncomplianceFindingEntity =
+                createNoncomplianceFindingEntity(
+                  deviceStatus,
+                  compliancePolicyEntity,
+                  logger,
+                );
               await jobState.addEntity(noncomplianceFindingEntity);
               await jobState.addRelationship(
                 createDirectRelationship({

@@ -1,12 +1,13 @@
 {
   "name": "@jupiterone/graph-microsoft-365",
-  "version": "4.0.1",
+  "version": "6.1.1",
   "description": "A JupiterOne Integration for Microsoft 365",
   "license": "MPL-2.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
   "files": [
-    "dist"
+    "src",
+    "jupiterone"
   ],
   "publishConfig": {
     "access": "public"
@@ -14,18 +15,19 @@
   "scripts": {
     "start": "j1-integration collect",
     "graph": "j1-integration visualize",
-    "visualize-types": "j1-integration visualize-types",
-    "visualize-spec": "j1-integration visualize-types -p docs/spec -o .j1-integration/types-graph/index.spec.html",
     "lint": "eslint . --cache --fix --ext .ts,.tsx",
     "format": "prettier --write '**/*.{ts,js,json,css,md,yml}'",
+    "format:check": "prettier --check '**/*.{ts,js,json,css,md,yml}'",
     "type-check": "tsc",
     "test": "jest",
     "test:env": "LOAD_CONFIG=1 jest",
-    "test:ci": "yarn lint && yarn type-check && yarn test",
-    "prebuild": "yarn test:ci",
-    "build": "tsc -p tsconfig.dist.json --declaration",
-    "prepush": "yarn lint && yarn type-check && jest --changedSince main",
-    "prepack": "yarn build"
+    "test:ci": "yarn format:check && yarn lint && yarn type-check && yarn test",
+    "build": "tsc -p tsconfig.dist.json --declaration && cp README.md dist/README.md && cp -r jupiterone/ dist/jupiterone/",
+    "prepush": "yarn format:check && yarn lint && yarn type-check && jest --changedSince main",
+    "graph:spec": "j1-integration visualize-types --project-path docs/spec --output-file ./.j1-integration/types-graph/index.spec.html",
+    "graph:types": "j1-integration visualize-types",
+    "validate:questions": "j1-integration validate-question-file -a $MANAGED_QUESTIONS_JUPITERONE_ACCOUNT_ID -k $MANAGED_QUESTIONS_JUPITERONE_API_KEY",
+    "validate:questions:dry": "j1-integration validate-question-file --dry-run"
   },
   "dependencies": {
     "@azure/identity": "^1.2.2",
@@ -34,13 +36,13 @@
     "lodash": "^4.17.20"
   },
   "peerDependencies": {
-    "@jupiterone/integration-sdk-core": "^7.3.1"
+    "@jupiterone/integration-sdk-core": "^8.10.1"
   },
   "devDependencies": {
-    "@jupiterone/integration-sdk-cli": "^7.3.1",
-    "@jupiterone/integration-sdk-core": "^7.3.1",
-    "@jupiterone/integration-sdk-dev-tools": "^7.3.1",
-    "@jupiterone/integration-sdk-testing": "^7.3.1",
+    "@jupiterone/integration-sdk-cli": "^8.10.1",
+    "@jupiterone/integration-sdk-core": "^8.10.1",
+    "@jupiterone/integration-sdk-dev-tools": "^8.10.1",
+    "@jupiterone/integration-sdk-testing": "^8.10.1",
     "@microsoft/microsoft-graph-types": "^1.28.0",
     "@microsoft/microsoft-graph-types-beta": "microsoftgraph/msgraph-typescript-typings#beta",
     "@types/node": "^14"

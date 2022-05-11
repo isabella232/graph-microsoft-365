@@ -4,30 +4,20 @@ import { DeviceConfigurationDeviceStatus } from '@microsoft/microsoft-graph-type
 /**
  * Device statuses that indicate that a finding should not be open
  */
-export const CLOSED_DEVICE_STATUSES: DeviceConfigurationDeviceStatus['status'][] = [
-  'notApplicable',
-  'compliant',
-  'remediated',
-  'notAssigned',
-];
+export const CLOSED_DEVICE_STATUSES: DeviceConfigurationDeviceStatus['status'][] =
+  ['notApplicable', 'compliant', 'remediated', 'notAssigned'];
 
 /**
  * Device statuses that indicate that a finding should not be open
  */
-export const OPEN_DEVICE_STATUSES: DeviceConfigurationDeviceStatus['status'][] = [
-  'nonCompliant',
-  'error',
-  'conflict',
-  'unknown',
-];
+export const OPEN_DEVICE_STATUSES: DeviceConfigurationDeviceStatus['status'][] =
+  ['nonCompliant', 'error', 'conflict', 'unknown'];
 
 /**
  * Device statuses that indicate that there is not a relationship between a device and config
  */
-export const UNRELATED_DEVICE_STATUSES: DeviceConfigurationDeviceStatus['status'][] = [
-  'notAssigned',
-  'notApplicable',
-];
+export const UNRELATED_DEVICE_STATUSES: DeviceConfigurationDeviceStatus['status'][] =
+  ['notAssigned', 'notApplicable'];
 
 /**
  * Determines if a device is related to a configuration based on the device state status on the config

@@ -56,6 +56,9 @@ describe('fetchAccount', () => {
       name: 'fetchAccountNoMdm',
       options: {
         recordFailedRequests: true, // getting the intune subscription will fail
+        matchRequestsBy: {
+          order: false,
+        },
       },
     });
     const context = createMockStepExecutionContext({

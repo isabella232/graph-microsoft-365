@@ -29,7 +29,7 @@ describe('findingIsOpen', () => {
   test('returns `undefined` if an unknown deviceStatus is passed in', () => {
     expect(
       findingIsOpen(
-        ('fakeStatus' as unknown) as DeviceConfigurationDeviceStatus['status'],
+        'fakeStatus' as unknown as DeviceConfigurationDeviceStatus['status'],
         logger,
       ),
     ).toBeUndefined();

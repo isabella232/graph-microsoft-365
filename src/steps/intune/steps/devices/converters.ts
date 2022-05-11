@@ -30,7 +30,7 @@ export function createManagedDeviceEntity(
       assign: {
         _class,
         _type: selectDeviceType(managedDevice.deviceType, isPhysicalDevice),
-        _key: managedDevice.id,
+        _key: managedDevice.id!,
         category: 'endpoint',
         id: managedDevice.id,
         name: managedDevice.deviceName,
@@ -83,6 +83,8 @@ export function createManagedDeviceEntity(
         jailBroken: managedDevice.jailBroken !== 'False',
         username: managedDevice.userPrincipalName,
         physical: isPhysicalDevice,
+        // Used to map HOSTAGENT to user_endpoint via user_endpoint's udid
+        deviceId: null,
         // POTENTIAL: managedDevice.usersLoggedOn - link out to other users perhaps?
       },
     },
@@ -150,6 +152,7 @@ export function selectDeviceType(
     case 'linux':
       return 'desktop';
     case 'windowsRT': // retired mobile OS
+      return 'user_endpoint';
     case 'winMO6': // retired mobile OS
     case 'nokia':
     case 'iPhone':

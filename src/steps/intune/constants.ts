@@ -33,6 +33,8 @@ export const managedDeviceTypes: ManagedDeviceType[] = [
 ];
 export const INTUNE_HOST_AGENT_KEY_PREFIX = 'intune-host-agent:';
 
+// TODO: Updating the following to a Record< 'Entity1' | 'Entity2', StepEntityMetaData>
+// pattern would be helpful and make this easier to work with
 export const entities = {
   MULTI_DEVICE: managedDeviceTypes.map((type) => {
     return {
@@ -44,7 +46,7 @@ export const entities = {
   HOST_AGENT: {
     resourceName: 'Intune Host Agent',
     _type: 'intune_host_agent',
-    _class: 'HostAgent',
+    _class: ['HostAgent'],
   },
   DEVICE_CONFIGURATION: {
     resourceName: 'Device Configuration',
@@ -59,19 +61,19 @@ export const entities = {
   NONCOMPLIANCE_FINDING: {
     resourceName: 'Noncompliance Finding',
     _type: 'intune_noncompliance_finding',
-    _class: 'Finding',
+    _class: ['Finding'],
   },
   MANAGED_APPLICATION: {
     resourceName: 'Managed Application',
     _type: 'intune_managed_application',
-    _class: 'Application',
+    _class: ['Application'],
   },
   DETECTED_APPLICATION: {
     resourceName: 'Detected Application',
     _type: 'intune_detected_application',
-    _class: 'Application',
+    _class: ['Application'],
   },
-} as const;
+};
 
 function createRelationshipForAllDeviceTypes(relationshipMetadata: {
   sourceType?: string;
@@ -136,18 +138,16 @@ export const relationships = {
     targetType: entities.NONCOMPLIANCE_FINDING._type,
     _class: RelationshipClass.HAS,
   }),
-  MULTI_DEVICE_ASSIGNED_MANAGED_APPLICATION: createRelationshipForAllDeviceTypes(
-    {
+  MULTI_DEVICE_ASSIGNED_MANAGED_APPLICATION:
+    createRelationshipForAllDeviceTypes({
       targetType: entities.MANAGED_APPLICATION._type,
       _class: RelationshipClass.ASSIGNED,
-    },
-  ),
-  MULTI_DEVICE_INSTALLED_DETECTED_APPLICATION: createRelationshipForAllDeviceTypes(
-    {
+    }),
+  MULTI_DEVICE_INSTALLED_DETECTED_APPLICATION:
+    createRelationshipForAllDeviceTypes({
       targetType: entities.DETECTED_APPLICATION._type,
       _class: RelationshipClass.INSTALLED,
-    },
-  ),
+    }),
   MANAGED_APPLICATION_MANAGES_DETECTED_APPLICATION: {
     _type: 'intune_managed_application_manages_detected_application',
     sourceType: entities.MANAGED_APPLICATION._type,
