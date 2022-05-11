@@ -1,4 +1,4 @@
-# Integration with JupiterOne
+# Microsoft 365 Integration with JupiterOne
 
 JupiterOne provides a managed integration for Microsoft 365. The integration
 connects directly to Microsoft Graph APIs to obtain metadata about the target
@@ -108,7 +108,7 @@ If you need help with this integration, please contact
     1. Read directory data
     1. Needed for creating `User`, `Group`, and `GroupUser` entities
 
-# How to Uninstall
+## How to Uninstall
 
 1. From the configuration **Gear Icon**, select **Integrations**.
 2. Scroll to the **Microsoft 365** integration tile and click it.
